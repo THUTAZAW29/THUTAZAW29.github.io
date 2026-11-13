@@ -60,9 +60,14 @@ ZIPを解凍し、`index.html` をダブルクリックしてください。Proj
 - `index-en.html`, `chroma-painter-en.html`, `space-shooter-en.html`: English pages.
 - The language selector in the header links to the corresponding page in the other language.
 - `language.css` styles the selector and improves English typography. Upload this file to the repository root too.
-- `THUTA_ZAW_Rirekisho.pdf` is linked beside **Send email** on the homepage.
 
-**PRIVACY WARNING:** `THUTA_ZAW_Rirekisho.pdf` contains private personal information. Publishing the PDF on public GitHub Pages makes it publicly accessible to anyone. If you prefer not to publish personal information, delete the PDF from the uploaded website and replace the résumé button with an email request link.
 
 ### Updating the live GitHub Pages site
 Upload every file and directory from this ZIP into the root of `THUTAZAW29.github.io` and choose to replace existing files. In particular, include all CSS, JavaScript, `assets/` files, English HTML pages, and the PDF if you knowingly want it public. After the commit, GitHub Pages redeploys; use Ctrl+Shift+R to bypass cache.
+
+
+## Privacy / プライバシー
+This public website package deliberately excludes the full résumé with personal data. The résumé button drafts an email request instead. Submit the résumé privately through employers' official application systems.
+公開用ファイルに個人情報を含む履歴書PDFは入っていません。履歴書ボタンからメールで依頼できます。応募先へは履歴書を非公開の応募フォーム等で送付してください。
+
+**Important:** Removing the sensitive PDF in the current GitHub branch alone does not remove it from previous commits. Follow GitHub guidance for removing sensitive data from repository history.
