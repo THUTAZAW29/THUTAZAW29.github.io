@@ -1,268 +1,254 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0d1015" />
-  <meta name="description" content="THUTA ZAWのゲームプログラマーポートフォリオ。C++ / DirectXによる完全自作エンジンの3Dマルチプレイヤーゲーム『Home Hearth』『Chroma Painter』『Space Shooter』の3作品を紹介します。" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="THUTA ZAW | Game Programmer Portfolio" />
-  <meta property="og:description" content="Home Hearth / Chroma Painter / Space Shooter — C++ / DirectX / Unity / C#" />
-  <title>THUTA ZAW — Game Programmer Portfolio</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="space.css" />
-  <script defer src="script.js"></script>
-  <script defer src="video-embed.js"></script>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#0d1015" name="theme-color"/>
+<meta content="THUTA ZAWのゲームプログラマーポートフォリオ。C++ / DirectXによる完全自作エンジンの3Dマルチプレイヤーゲーム『Home Hearth』『Chroma Painter』『Space Shooter』の3作品を紹介します。" name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="THUTA ZAW | Game Programmer Portfolio" property="og:title"/>
+<meta content="Home Hearth / Chroma Painter / Space Shooter — C++ / DirectX / Unity / C#" property="og:description"/>
+<title>THUTA ZAW — Game Programmer Portfolio</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="space.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
+<script defer="" src="video-embed.js"></script>
+<link href="index.html" hreflang="ja" rel="alternate"/><link href="index-en.html" hreflang="en" rel="alternate"/><link href="language.css" rel="stylesheet"/></head>
 <body>
-  <div class="page-progress" id="page-progress" aria-hidden="true"></div>
-  <a class="skip-link" href="#main">本文へスキップ</a>
-  <header class="site-header" id="top">
-    <div class="header-inner container">
-      <a class="brand" href="#top" aria-label="THUTA ZAW ポートフォリオ トップ">
-        <span class="brand-symbol">T<span class="brand-accent">/</span>Z</span>
-        <span class="brand-label">THUTA ZAW <small>GAME PROGRAMMER</small></span>
-      </a>
-      <nav class="desktop-nav" aria-label="メインナビゲーション">
-        <a href="#work">PROJECT</a>
-        <a href="#engineering">ENGINEERING</a>
-        <a href="#gallery">GALLERY</a><a href="#chroma">CHROMA PAINTER</a>
-        <a href="#space">SPACE SHOOTER</a>
-        <a href="#about">ABOUT</a>
-      </nav>
-      <a class="header-contact" href="#contact">CONTACT <span aria-hidden="true">↗</span></a>
-      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
-    </div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="モバイルメニュー" hidden>
-      <a href="#work">PROJECT</a><a href="#engineering">ENGINEERING</a><a href="#gallery">GALLERY</a><a href="#chroma">CHROMA PAINTER</a><a href="#space">SPACE SHOOTER</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a>
-    </nav>
-  </header>
-
-  <main id="main">
-    <section class="hero section" aria-labelledby="hero-title">
-      <div class="hero-orb orb-one" aria-hidden="true"></div><div class="hero-orb orb-two" aria-hidden="true"></div>
-      <div class="hero-grid container">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="eyebrow-line"></span> PORTFOLIO / GAME PROGRAMMING</div>
-          <div class="availability"><span class="pulse"></span> HAL東京 ゲーム学科</div>
-          <h1 id="hero-title">仕組みからつくる、<br /><span class="gradient-text">ゲーム体験。</span></h1>
-          <p class="hero-lead">C++とDirectXを用いたゲーム開発を通じて、<br class="desktop-only" />「コードがどう動くか」という根幹を探求しています。</p>
-          <div class="hero-tags" aria-label="主な技術"><span>C++</span><span>DIRECTX</span><span>3D RENDERING</span><span>NETWORKING</span><span>UNITY / C#</span></div>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#work">作品を見る <span aria-hidden="true">↗</span></a>
-            <a class="btn btn-outline" href="#home-video">デモリール <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="hero-signoff"><span class="signoff-mark">TZ.</span><span>THUTA ZAW<br /><small>GAME PROGRAMMER</small></span></div>
-        </div>
-        <div class="hero-visual reveal">
-          <div class="visual-backdrop"></div>
-          <figure class="hero-poster">
-            <img src="assets/p05_01.webp" alt="Home Hearthの3Dゲームプレイ画面。村の建物とキャラクター、アイテムUIが表示されている" fetchpriority="high" />
-            <figcaption><span class="poster-indicator"><i></i> FEATURED PROJECT</span><span class="poster-count">01 / 03</span></figcaption>
-          </figure>
-          <div class="floating-label"><span class="float-symbol">✳</span><span>BUILT WITH<br /><strong>C++ / DirectX</strong></span></div>
-          <p class="poster-side-note">HOME HEARTH &nbsp; — &nbsp; CUSTOM ENGINE</p>
-        </div>
-      </div>
-      <div class="hero-bottom container"><span>SCROLL TO EXPLORE</span><span class="scroll-stem" aria-hidden="true"></span><span>東京 / JAPAN</span></div>
-    </section>
-
-    <section class="stats-strip" aria-label="プロジェクトの特徴">
-      <div class="container stats-grid">
-        <div class="stat"><strong>03</strong><span>GAME PROJECTS</span></div>
-        <div class="stat"><strong>04</strong><span>PLAYER MULTIPLAYER</span></div>
-        <div class="stat"><strong>02<span class="stat-unit">年</span></strong><span>DEVELOPMENT PERIOD</span></div>
-        <div class="stat"><strong>02</strong><span>SCHOOL AWARDS</span></div>
-      </div>
-    </section>
-
-    <section id="work" class="section work-section">
-      <div class="container">
-        <div class="section-topline reveal"><span class="section-index">01 / SELECTED WORK</span><span class="thin-rule"></span><span class="section-aside">メインプロジェクト</span></div>
-        <div class="work-heading reveal"><div><p class="section-overline">FEATURED PROJECT</p><h2 class="display-heading">HOME <em>HEARTH</em><span class="work-period">2-YEAR DEVELOPMENT</span></h2></div><p class="work-intro">完全自作のゲームエンジンを用いてゼロから構築した、ネットワーク同期型の3Dマルチプレイヤー・アクションゲーム。</p></div>
-        <div class="work-main-grid">
-          <div class="feature-media reveal">
-            <button type="button" class="image-zoom" data-image="assets/p07_01.webp" data-alt="Home Hearthの防衛設備配置シーン" aria-label="Home Hearthのゲームプレイ画像を拡大">
-              <img src="assets/p07_01.webp" alt="Home Hearthのゲームプレイ。拠点防衛のために設備を配置する画面" loading="lazy" />
-              <span class="zoom-corner" aria-hidden="true">↗</span>
-            </button>
-            <div class="media-caption"><span>IN-GAME SCREENSHOT</span><span>3D / ACTION / DEFENSE</span></div>
-          </div>
-          <div class="work-details reveal">
-            <div class="detail-kicker">PROJECT PROFILE <span>01</span></div>
-            <h3>遊びの裏側まで、<br />自分の手で。</h3>
-            <p>通信処理（TCP / UDP）から3Dレンダリング、物理演算まで、ゲームエンジンの根幹となるシステムを独自に設計・実装。最大4人で遊べる協力型の防衛アクションを制作しました。</p>
-            <dl class="meta-list">
-              <div><dt>開発環境</dt><dd>C++ / DirectX（自作エンジン）</dd></div>
-              <div><dt>開発期間</dt><dd>2年間</dd></div>
-              <div><dt>担当</dt><dd>メインプログラマー</dd></div>
-              <div><dt>ジャンル</dt><dd>3Dマルチプレイヤー・アクション</dd></div>
-            </dl>
-            <div class="work-links"><a class="text-link" href="#home-video">PLAY DEMO REEL <span>↗</span></a><a class="text-link" href="THUTA_ZAW_Portfolio.pdf" download>DOWNLOAD PDF <span>↓</span></a></div>
-          </div>
-        </div>
-        <div class="awards reveal">
-          <div class="awards-head"><span class="award-star">✳</span><div><p class="section-overline">RECOGNITION</p><h3>受賞歴</h3></div></div>
-          <div class="award-entry"><span>01</span><p>DirectX オリジナルゲーム学内コンテスト</p><strong>技術力賞</strong></div>
-          <div class="award-entry"><span>02</span><p>HAL EVENT WEEK</p><strong>独創力賞</strong></div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="engineering" class="section engineering-section">
-      <div class="container">
-        <div class="section-topline reveal"><span class="section-index">02 / UNDER THE HOOD</span><span class="thin-rule"></span><span class="section-aside">技術解説</span></div>
-        <div class="section-title-row reveal"><div><p class="section-overline">ENGINEERING HIGHLIGHTS</p><h2 class="section-heading">見えない部分にこそ、<br /><em>こだわりを。</em></h2></div><p class="section-description">ゲームとしての体験だけでなく、その実現を支えるシステム設計と実装を紹介します。</p></div>
-
-        <article class="tech-feature tech-feature-left reveal">
-          <div class="tech-copy"><span class="tech-index">ENGINEERING / 01</span><div class="tech-mini-icon" aria-hidden="true">⌁</div><h3>TCP / UDP を用いた<br />独自ネットワーク同期</h3><p>既存のゲームエンジンに頼らず、C++によるソケット通信を実装。サーバーとクライアント間のリアルタイム同期、最大4人のロビーシステムを構築しました。</p><div class="chip-row"><span>SOCKET PROGRAMMING</span><span>TCP / UDP</span><span>MULTIPLAYER</span></div></div>
-          <div class="tech-visual"><button type="button" class="image-zoom tech-image" data-image="assets/p04_01.webp" data-alt="TCPとUDPのソケット作成ログ" aria-label="ネットワークログを拡大"><img src="assets/p04_01.webp" alt="Home HearthのTCP / UDPサーバー起動時のコンソールログ" loading="lazy" /></button><div class="tech-image-caption">SERVER / SOCKET INITIALIZATION</div></div>
-        </article>
-        <article class="tech-feature tech-feature-right reveal">
-          <div class="tech-copy"><span class="tech-index">ENGINEERING / 02</span><div class="tech-mini-icon" aria-hidden="true">▦</div><h3>パスベースの<br />3Dレンダリング</h3><p><code>IRenderPass</code> インターフェースを用いた拡張性のあるレンダリング設計。Shadow、DoF、Bloom、パーティクルなど複数の描画パスを統合し、マルチスレッド環境での処理を考慮しました。</p><div class="chip-row"><span>DIRECTX</span><span>RENDER PASS</span><span>POST EFFECTS</span></div></div>
-          <div class="tech-visual tech-stack"><button type="button" class="image-zoom tech-image" data-image="assets/p05_02.webp" data-alt="IRenderPassによる描画パイプラインのコード" aria-label="描画パイプラインのコードを拡大"><img src="assets/p05_02.webp" alt="IRenderPassインターフェースを使ったパスベース描画のコード" loading="lazy" /></button><div class="tech-image-caption">RENDER PIPELINE / CODE</div></div>
-        </article>
-        <article class="tech-feature tech-feature-left reveal">
-          <div class="tech-copy"><span class="tech-index">ENGINEERING / 03</span><div class="tech-mini-icon" aria-hidden="true">⇄</div><h3>デルタタイムによる<br />キャラクター制御</h3><p>フレームレートの変動を考慮し、<code>elapsed_time</code> に基づく更新処理を実装。速度ベクトルや摩擦（減衰）を用いて、滑らかな移動表現を目指しました。</p><div class="chip-row"><span>DELTA TIME</span><span>VELOCITY</span><span>FRICTION</span></div></div>
-          <div class="tech-visual"><button type="button" class="image-zoom tech-image" data-image="assets/p06_02.webp" data-alt="デルタタイムによる速度・位置更新のコード" aria-label="キャラクター制御のコードを拡大"><img src="assets/p06_02.webp" alt="elapsed_timeを使った速度・位置更新と摩擦処理のC++コード" loading="lazy" /></button><div class="tech-image-caption">CHARACTER CONTROLLER / CODE</div></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section systems-section" id="systems">
-      <div class="container">
-        <div class="section-topline reveal"><span class="section-index">03 / GAME SYSTEMS</span><span class="thin-rule"></span><span class="section-aside">ゲームシステム</span></div>
-        <div class="section-title-row reveal"><div><p class="section-overline">GAMEPLAY &amp; DESIGN</p><h2 class="section-heading">遊びを支える、<br /><em>3つの仕組み。</em></h2></div></div>
-        <div class="system-grid">
-          <article class="system-card reveal"><div class="system-image"><img src="assets/p07_02.webp" alt="罠・防御設備の建築とアップグレードを行うゲームUI" loading="lazy" /></div><div class="system-body"><span class="system-no">01 / WAVE DEFENSE</span><h3>建築 × アクション</h3><p>迫りくる敵から拠点を守るウェーブ制防衛システム。リソースを使った防具・罠の配置と、プレイヤー自身の攻撃を組み合わせます。</p></div></article>
-          <article class="system-card reveal"><div class="system-image"><img src="assets/p08_02.webp" alt="4人用ロビーを複数表示する接続画面" loading="lazy" /></div><div class="system-body"><span class="system-no">02 / MULTIPLAYER LOBBY</span><h3>4人協力プレイ</h3><p>IPアドレスとポートを指定する接続画面とロビーシステム。役割を分担しながら拠点を守る協力プレイの基盤を作りました。</p></div></article>
-          <article class="system-card reveal"><div class="system-image"><img src="assets/p08_01.webp" alt="ウィザードのスキルとクラス選択画面" loading="lazy" /></div><div class="system-body"><span class="system-no">03 / CLASS ABILITIES</span><h3>個性のあるクラス</h3><p>ウィザードには範囲魔法、味方の回復、瞬間移動（Blink）などの固有アビリティを実装。クラス間の連携を意識した設計です。</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery" class="section gallery-section">
-      <div class="container">
-        <div class="section-topline reveal"><span class="section-index">04 / VISUAL ARCHIVE</span><span class="thin-rule"></span><span class="section-aside">スクリーンショット</span></div>
-        <div class="section-title-row gallery-title reveal"><div><p class="section-overline">IN-GAME &amp; DEVELOPMENT</p><h2 class="section-heading">PROJECT <em>GALLERY.</em></h2></div><div class="gallery-filters" role="group" aria-label="ギャラリーの種類"><button type="button" class="filter is-active" data-filter="all" aria-pressed="true">ALL</button><button type="button" class="filter" data-filter="gameplay" aria-pressed="false">GAMEPLAY</button><button type="button" class="filter" data-filter="code" aria-pressed="false">CODE</button><button type="button" class="filter" data-filter="models" aria-pressed="false">3D ASSETS</button></div></div>
-        <div class="gallery-grid">
-          <button class="gallery-item gallery-wide reveal" type="button" data-category="gameplay" data-image="assets/p05_01.webp" data-alt="Home Hearthのゲームプレイ。家、キャラクター、ゲームUI" aria-label="ゲームプレイ画像を拡大"><img src="assets/p05_01.webp" alt="Home Hearthの家とキャラクターがある3Dフィールド" loading="lazy" /><span class="gallery-overlay"><strong>WORLD &amp; COMBAT</strong><span>GAMEPLAY ↗</span></span></button>
-          <button class="gallery-item reveal" type="button" data-category="gameplay" data-image="assets/p03_01.webp" data-alt="Home Hearthのタイトル画面" aria-label="タイトル画面を拡大"><img src="assets/p03_01.webp" alt="Home Hearthのタイトル画面と接続設定UI" loading="lazy" /><span class="gallery-overlay"><strong>TITLE SCREEN</strong><span>GAMEPLAY ↗</span></span></button>
-          <button class="gallery-item reveal" type="button" data-category="gameplay" data-image="assets/p06_01.webp" data-alt="キャラクターが移動するゲームプレイ画面" aria-label="移動シーンを拡大"><img src="assets/p06_01.webp" alt="キャラクター移動のゲームプレイ画面" loading="lazy" /><span class="gallery-overlay"><strong>CHARACTER MOVEMENT</strong><span>GAMEPLAY ↗</span></span></button>
-          <button class="gallery-item reveal" type="button" data-category="code" data-image="assets/p04_02.webp" data-alt="ネットワーク実装のソースコード" aria-label="ネットワークソースコードを拡大"><img src="assets/p04_02.webp" alt="サーバー接続処理のC++ソースコード" loading="lazy" /><span class="gallery-overlay"><strong>NETWORK CODE</strong><span>CODE ↗</span></span></button>
-          <button class="gallery-item reveal" type="button" data-category="code" data-image="assets/p05_02.webp" data-alt="3Dレンダリングのソースコード" aria-label="レンダリングソースコードを拡大"><img src="assets/p05_02.webp" alt="3Dレンダーパス処理のC++ソースコード" loading="lazy" /><span class="gallery-overlay"><strong>RENDER PASS</strong><span>CODE ↗</span></span></button>
-          <button class="gallery-item reveal" type="button" data-category="models" data-image="assets/p09_03.webp" data-alt="ナイトのオリジナル3Dモデル" aria-label="ナイトモデルを拡大"><img src="assets/p09_03.webp" alt="オリジナルのナイトの3Dキャラクターモデル" loading="lazy" /><span class="gallery-overlay"><strong>KNIGHT</strong><span>3D ASSET ↗</span></span></button>
-          <button class="gallery-item reveal" type="button" data-category="models" data-image="assets/p09_01.webp" data-alt="ウィザードのオリジナル3Dモデル" aria-label="ウィザードモデルを拡大"><img src="assets/p09_01.webp" alt="オリジナルのウィザードの3Dキャラクターモデル" loading="lazy" /><span class="gallery-overlay"><strong>WIZARD</strong><span>3D ASSET ↗</span></span></button>
-          <button class="gallery-item reveal" type="button" data-category="models" data-image="assets/p09_02.webp" data-alt="村人のオリジナル3Dモデル" aria-label="村人モデルを拡大"><img src="assets/p09_02.webp" alt="オリジナルの村人の3Dキャラクターモデル" loading="lazy" /><span class="gallery-overlay"><strong>VILLAGER</strong><span>3D ASSET ↗</span></span></button>
-        </div>
-        <div class="asset-note reveal"><span class="asset-icon">↳</span><p>3Dツールからのモデルエクスポート、マテリアル・シェーディング・ライティングの管理を含む、オリジナルのアセットパイプラインを構築しました。</p></div>
-      </div>
-    </section>
-
-    <!-- HOME HEARTH / PLAY VIDEO — after the complete project explanation and gallery -->
-    <section id="home-video" class="section home-video-section" aria-labelledby="home-video-title">
-      <div class="container">
-        <div class="section-topline reveal"><span class="section-index">05 / HOME HEARTH VIDEO</span><span class="thin-rule"></span><span class="section-aside">メインプロジェクトのプレイ動画</span></div>
-        <div class="chroma-video home-hearth-video reveal">
-          <div>
-            <p class="section-overline">GAMEPLAY DEMONSTRATION</p>
-            <h2 id="home-video-title">Home Hearth<br />プレイ動画</h2>
-            <p>自作のC++ / DirectXエンジンで制作した3Dマルチプレイヤー・アクションのデモリールです。ゲーム画面と開発成果をご覧いただけます。</p>
-          </div>
-          <div class="chroma-embed portfolio-video home-hearth-video-frame" data-video-id="yKtJmHyz2-I" data-video-title="Home Hearth デモリール" aria-label="Home Hearth プレイ動画">
-            <img class="portfolio-video-poster" src="assets/p05_01.webp" alt="Home Hearthの3Dゲームプレイ画面" loading="lazy" />
-            <div class="portfolio-video-overlay">
-              <span class="portfolio-video-eyebrow">HOME HEARTH · GAMEPLAY DEMO</span>
-              <strong>プレイ動画を見る</strong>
-              <div class="portfolio-video-actions">
-                <a class="portfolio-video-cta" href="https://www.youtube.com/watch?v=yKtJmHyz2-I" target="_blank" rel="noopener noreferrer">▶ YouTubeで見る ↗</a>
-                <button class="portfolio-video-embed-button" type="button" hidden>サイト内で再生 ▶</button>
-              </div>
-              <p class="portfolio-video-hint">動画はYouTubeで開きます。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="chroma" class="section chroma-section" aria-labelledby="chroma-title">
-      <div class="container">
-        <div class="section-topline reveal"><span class="section-index">06 / SECOND PROJECT</span><span class="thin-rule"></span><span class="section-aside">DirectX 2D作品</span></div>
-        <div class="work-heading reveal"><div><p class="section-overline">2D GAME PROJECT</p><h2 id="chroma-title" class="display-heading">CHROMA <em>PAINTER</em></h2></div><p class="work-intro">色の効果を活用してステージを攻略する、C++ / DirectX製の2Dプラットフォームゲーム。</p></div>
-        <div class="chroma-feature reveal"><img src="assets/chroma-2.webp" alt="Chroma Painterの実際のプレイ画面。レンガの足場、はしご、キャラクター、敵が並ぶ2Dステージ" loading="lazy"><div class="chroma-summary"><p class="section-overline">GAME OVERVIEW</p><h3>色で変わる、アクション。</h3><p>プレイヤーが色の異なる弾を使い、ステージ内のオブジェクトの性質を変化させながら進む2Dアクションゲーム。赤・青・黄の効果や、透明ブロックを可視化する仕組みを組み合わせています。</p><div class="chip-row"><span>C++</span><span>DIRECTX 2D</span><span>PLATFORMER</span></div><p class="chroma-note">主な操作：A / D（移動）、W / S（はしご）、Space（ジャンプ）、1 / 2 / 3（赤・青・黄の選択）、左クリック（発射）</p><div class="work-links"><a class="text-link" href="chroma-painter.html">TECHNICAL BREAKDOWN <span>↗</span></a><a class="text-link" href="https://youtu.be/ief-NCYxMj0" target="_blank" rel="noopener noreferrer">WATCH GAMEPLAY ↗</a></div></div></div>
-        <div class="chroma-mechanics reveal"><div><strong>01 / PAINT SYSTEM</strong><h3>色で変わる足場</h3><p>射出したペイント弾が着弾すると、塗装可能なタイルの状態を変更。赤は反発、青は滑走、黄は壁面での動きに変化を与えます。</p></div><div><strong>02 / LEVEL &amp; COLLISION</strong><h3>50 × 28タイルのステージ</h3><p>32px単位のマップデータをもとに足場・はしご・敵などを配置。矩形当たり判定と速度更新で移動を制御します。</p></div><div><strong>03 / GAME FLOW</strong><h3>操作からクリアまで</h3><p>アニメーション、カラー切り替え、敵との戦闘、フェード演出、タイトル／ゲーム／リザルトのシーン遷移を実装しました。</p></div></div>
-        <div class="chroma-gallery reveal"><figure><img src="assets/chroma-1.webp" alt="Chroma Painterのカラフルなタイトル画面" loading="lazy"><figcaption>TITLE SCREEN</figcaption></figure><figure><img src="assets/chroma-2.webp" alt="Chroma Painterの2Dゲームプレイ画面" loading="lazy"><figcaption>GAMEPLAY</figcaption></figure><figure><img src="assets/chroma-3.webp" alt="Chroma PainterのYOU WONクリア画面" loading="lazy"><figcaption>VICTORY SCREEN</figcaption></figure></div>
-        <div class="chroma-video reveal"><div><p class="section-overline">GAMEPLAY DEMONSTRATION</p><h3>プレイ動画</h3><p>ゲームの操作やステージの様子を動画で確認できます。</p></div><div class="chroma-embed portfolio-video" data-video-id="ief-NCYxMj0" aria-label="Chroma Painter プレイ動画">
-          <img class="portfolio-video-poster" src="assets/chroma-2.webp" alt="Chroma Painterのプレイ画面" loading="lazy">
-          <div class="portfolio-video-overlay">
-            <span class="portfolio-video-eyebrow">CHROMA PAINTER · GAMEPLAY DEMO</span>
-            <strong>プレイ動画を見る</strong>
-            <div class="portfolio-video-actions">
-              <a class="portfolio-video-cta" href="https://www.youtube.com/watch?v=ief-NCYxMj0" target="_blank" rel="noopener noreferrer">▶ YouTubeで見る ↗</a>
-              <button class="portfolio-video-embed-button" type="button" hidden>サイト内で再生 ▶</button>
-            </div>
-            <p class="portfolio-video-hint">動画はYouTubeで開きます。</p>
-          </div>
-        </div></div>
-        <p class="chroma-note chroma-submission-note">※ 実行ファイル（Windowsビルド）とソースコードは、応募先の提出方法に合わせて別途提出します。Webサイトには含まれません。 <a href="chroma-painter.html">実装の詳細を見る ↗</a></p>
-      </div>
-    </section>
-
-
-    <!-- PROJECT 03 — placed after the COMPLETE Chroma Painter section -->
-    <section id="space" class="section space-section" aria-labelledby="space-title">
-      <div class="container">
-        <div class="section-topline reveal"><span class="section-index">07 / THIRD PROJECT</span><span class="thin-rule"></span><span class="section-aside">Unity 2D作品</span></div>
-        <div class="work-heading reveal space-heading"><div><p class="section-overline">UNITY 6 · C# / SHOOT 'EM UP</p><h2 id="space-title" class="display-heading">SPACE <em>SHOOTER</em></h2></div><p class="work-intro">宇宙船を操作し、迫り来る障害物や敵に立ち向かう2Dシューティングゲーム。エネルギー管理やウェーブ進行、ボス戦などを実装しています。</p></div>
-        <div class="space-spotlight reveal">
-          <div class="space-spotlight-visual">
-            <img src="assets/space-gameplay.webp" alt="Space Shooterの実際のゲームプレイ。宇宙船、惑星風の障害物、体力とエネルギーUI" loading="lazy"/>
-            <div class="space-image-label"><span class="space-glow-dot"></span> ACTUAL GAMEPLAY <span>PROJECT 03 / UNITY 2D</span></div>
-          </div>
-          <div class="space-spotlight-content"><p class="section-overline">GAME OVERVIEW</p><h3>宇宙を切り抜け、<br/>次のウェーブへ。</h3><p>プレイヤーは小型宇宙船を操縦し、アステロイドや敵を回避・攻撃しながら先へ進みます。HPとエネルギーを管理し、ステージの終盤には大型の敵が待ち受けます。</p><div class="chip-row space-tags"><span>UNITY 6</span><span>C#</span><span>2D SHOOTER</span><span>WAVE SYSTEM</span></div><div class="work-links"><a class="text-link" href="space-shooter.html">PROJECT DETAILS <span>↗</span></a><a class="text-link" href="https://youtu.be/JkXF_XDdTvg" target="_blank" rel="noopener noreferrer">WATCH GAMEPLAY <span>↗</span></a></div></div>
-        </div>
-        <div class="space-highlights reveal">
-          <article><span>01 / PLAYER SYSTEM</span><h3>エネルギー &amp; HP管理</h3><p>プレイヤーの体力・エネルギーを表示。Unity Inspectorには移動速度、ブースト、エネルギー回復などの設定項目が確認できます。</p></article>
-          <article><span>02 / SPAWNING SYSTEM</span><h3>ウェーブ &amp; オブジェクトプール</h3><p>敵や障害物を段階的に出現させるウェーブ構成。複数のオブジェクトプールを使用する管理構成をUnity Editor上で確認できます。</p></article>
-          <article><span>03 / GAME FLOW</span><h3>タイトル・ポーズ・クリア</h3><p>メニュー画面、ポーズ状態、ステージ完了画面までを用意。ゲーム進行を支えるUIとシーン構成を紹介します。</p></article>
-        </div>
-        <div class="space-stills reveal" aria-label="Space Shooterのスクリーンショット">
-          <figure><button type="button" class="space-zoom" data-image="assets/space-title.webp" data-alt="Space Shooterのタイトル画面"><img src="assets/space-title.webp" alt="SPACE SHOOTERタイトル画面とNEW GAMEボタン" loading="lazy"/></button><figcaption>01 / TITLE SCREEN</figcaption></figure>
-          <figure><button type="button" class="space-zoom" data-image="assets/space-boss.webp" data-alt="Space Shooterの大型敵との戦闘"><img src="assets/space-boss.webp" alt="宇宙船と大型の敵が対峙するゲーム画面" loading="lazy"/></button><figcaption>02 / ENCOUNTER</figcaption></figure>
-          <figure><button type="button" class="space-zoom" data-image="assets/space-complete.webp" data-alt="Space Shooterのミッション完了画面"><img src="assets/space-complete.webp" alt="MISSION COMPLETEとNEXT LEVELボタンの画面" loading="lazy"/></button><figcaption>03 / MISSION COMPLETE</figcaption></figure>
-        </div>
-        <div class="space-video-block reveal">
-          <div><p class="section-overline">GAMEPLAY DEMONSTRATION</p><h3>プレイ動画</h3><p>実際のゲーム画面とステージの流れをご覧いただけます。</p><a class="space-small-link" href="space-shooter.html#technical">実装構成の解説を見る ↗</a></div>
-          <div class="space-video-frame portfolio-video" data-video-id="JkXF_XDdTvg" data-video-title="Space Shooter プレイ動画" aria-label="Space Shooter プレイ動画">
-            <img class="portfolio-video-poster" src="assets/space-gameplay.webp" alt="Space Shooterのゲームプレイ画像" loading="lazy" />
-            <div class="portfolio-video-overlay"><span class="portfolio-video-eyebrow">SPACE SHOOTER · GAMEPLAY DEMO</span><strong>プレイ動画を見る</strong><div class="portfolio-video-actions"><a class="portfolio-video-cta" href="https://www.youtube.com/watch?v=JkXF_XDdTvg" target="_blank" rel="noopener noreferrer">▶ YouTubeで見る ↗</a><button class="portfolio-video-embed-button" type="button" hidden>サイト内で再生 ▶</button></div><p class="portfolio-video-hint">動画はYouTubeで開きます。</p></div>
-          </div>
-        </div>
-        <p class="space-submission-note reveal">※ 実行ファイル・Unityプロジェクト・C#ソースコードは応募先への提出時に別途共有します。この公開サイトには含めていません。 <a href="space-shooter.html">Space Shooterの詳細ページ ↗</a></p>
-      </div>
-    </section>
-
-    <section id="about" class="section about-section">
-      <div class="container">
-        <div class="section-topline reveal"><span class="section-index">08 / ABOUT THE DEVELOPER</span><span class="thin-rule"></span><span class="section-aside">自己紹介</span></div>
-        <div class="about-grid">
-          <div class="about-left reveal"><p class="section-overline">ABOUT ME</p><h2 class="about-display">THUTA<br /><em>ZAW.</em></h2><div class="about-role">GAME PROGRAMMER <span>・</span> HAL TOKYO</div><div class="about-decoration" aria-hidden="true">TZ<span>＊</span></div></div>
-          <div class="about-right reveal"><p class="about-lead">「コードがどう動くか」という<br />根幹の探求。</p><p>DirectXやC++を用いた開発経験を活かし、ハードウェアレベルでコードがどのように処理されるのかを意識しながら実装を行っています。</p><p>現在のUnityやC#の知識を土台に、今後はUnreal Engineの学習にも取り組み、ゲームエンジンのアーキテクチャへの理解をさらに深めたいと考えています。</p><div class="skills-block"><h3>TECH STACK <span>技術・学習分野</span></h3><div class="skill-list"><span>C++</span><span>DirectX</span><span>TCP / UDP</span><span>3D Rendering</span><span>Unity</span><span>C#</span><span>3D Assets</span></div><p class="learning-note">NEXT TO LEARN → UNREAL ENGINE</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <div class="section-topline reveal"><span class="section-index">09 / GET IN TOUCH</span><span class="thin-rule"></span><span class="section-aside">お問い合わせ</span></div>
-        <div class="contact-content reveal"><p class="section-overline">LET'S CONNECT</p><h2>一緒に、<br /><em>次のゲームを。</em></h2><p>採用についてのお問い合わせや、作品に関するご質問はメールでお気軽にご連絡ください。</p><a class="email-link" href="mailto:ttzdg78@gmail.com">ttzdg78@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-actions"><a class="btn btn-primary" href="mailto:ttzdg78@gmail.com?subject=Portfolio%20Inquiry">メールを送る ↗</a></div></div>
-        <footer class="footer"><a class="footer-brand" href="#top">TZ<span>/</span></a><span>© <span id="year">2026</span> THUTA ZAW</span><span>DESIGNED FOR THE LOVE OF GAME DEVELOPMENT</span><a href="#top" class="back-to-top">BACK TO TOP ↑</a></footer>
-      </div>
-    </section>
-  </main>
-
-  <dialog class="lightbox" id="lightbox" aria-label="画像を拡大表示"><div class="lightbox-inner"><button type="button" class="lightbox-close" id="lightbox-close" aria-label="拡大表示を閉じる">×</button><img id="lightbox-img" alt="" /><p id="lightbox-caption"></p></div></dialog>
+<div aria-hidden="true" class="page-progress" id="page-progress"></div>
+<a class="skip-link" href="#main">本文へスキップ</a>
+<header class="site-header" id="top">
+<div class="header-inner container">
+<a aria-label="THUTA ZAW ポートフォリオ トップ" class="brand" href="#top">
+<span class="brand-symbol">T<span class="brand-accent">/</span>Z</span>
+<span class="brand-label">THUTA ZAW <small>GAME PROGRAMMER</small></span>
+</a>
+<nav aria-label="メインナビゲーション" class="desktop-nav">
+<a href="#work">PROJECT</a>
+<a href="#engineering">ENGINEERING</a>
+<a href="#gallery">GALLERY</a><a href="#chroma">CHROMA PAINTER</a>
+<a href="#space">SPACE SHOOTER</a>
+<a href="#about">ABOUT</a>
+</nav>
+<a class="header-contact" href="#contact">CONTACT <span aria-hidden="true">↗</span></a>
+<div aria-label="Language / 言語" class="language-switcher" role="group"><a aria-current="page" class="language-choice active" href="index.html" hreflang="ja" lang="ja">日本語</a><a class="language-choice" href="index-en.html" hreflang="en" lang="en">EN</a></div><button aria-controls="mobile-nav" aria-expanded="false" aria-label="メニューを開く" class="menu-toggle" id="menu-toggle" type="button"><span></span><span></span></button>
+</div>
+<nav aria-label="モバイルメニュー" class="mobile-nav" hidden="" id="mobile-nav">
+<a href="#work">PROJECT</a><a href="#engineering">ENGINEERING</a><a href="#gallery">GALLERY</a><a href="#chroma">CHROMA PAINTER</a><a href="#space">SPACE SHOOTER</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a>
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero section">
+<div aria-hidden="true" class="hero-orb orb-one"></div><div aria-hidden="true" class="hero-orb orb-two"></div>
+<div class="hero-grid container">
+<div class="hero-copy reveal">
+<div class="eyebrow"><span class="eyebrow-line"></span> PORTFOLIO / GAME PROGRAMMING</div>
+<div class="availability"><span class="pulse"></span> HAL東京 ゲーム学科</div>
+<h1 id="hero-title">仕組みからつくる、<br/><span class="gradient-text">ゲーム体験。</span></h1>
+<p class="hero-lead">C++とDirectXを用いたゲーム開発を通じて、<br class="desktop-only"/>「コードがどう動くか」という根幹を探求しています。</p>
+<div aria-label="主な技術" class="hero-tags"><span>C++</span><span>DIRECTX</span><span>3D RENDERING</span><span>NETWORKING</span><span>UNITY / C#</span></div>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#work">作品を見る <span aria-hidden="true">↗</span></a>
+<a class="btn btn-outline" href="#home-video">デモリール <span aria-hidden="true">↗</span></a>
+</div>
+<div class="hero-signoff"><span class="signoff-mark">TZ.</span><span>THUTA ZAW<br/><small>GAME PROGRAMMER</small></span></div>
+</div>
+<div class="hero-visual reveal">
+<div class="visual-backdrop"></div>
+<figure class="hero-poster">
+<img alt="Home Hearthの3Dゲームプレイ画面。村の建物とキャラクター、アイテムUIが表示されている" fetchpriority="high" src="assets/p05_01.webp"/>
+<figcaption><span class="poster-indicator"><i></i> FEATURED PROJECT</span><span class="poster-count">01 / 03</span></figcaption>
+</figure>
+<div class="floating-label"><span class="float-symbol">✳</span><span>BUILT WITH<br/><strong>C++ / DirectX</strong></span></div>
+<p class="poster-side-note">HOME HEARTH   —   CUSTOM ENGINE</p>
+</div>
+</div>
+<div class="hero-bottom container"><span>SCROLL TO EXPLORE</span><span aria-hidden="true" class="scroll-stem"></span><span>東京 / JAPAN</span></div>
+</section>
+<section aria-label="プロジェクトの特徴" class="stats-strip">
+<div class="container stats-grid">
+<div class="stat"><strong>03</strong><span>GAME PROJECTS</span></div>
+<div class="stat"><strong>04</strong><span>PLAYER MULTIPLAYER</span></div>
+<div class="stat"><strong>02<span class="stat-unit">年</span></strong><span>DEVELOPMENT PERIOD</span></div>
+<div class="stat"><strong>02</strong><span>SCHOOL AWARDS</span></div>
+</div>
+</section>
+<section class="section work-section" id="work">
+<div class="container">
+<div class="section-topline reveal"><span class="section-index">01 / SELECTED WORK</span><span class="thin-rule"></span><span class="section-aside">メインプロジェクト</span></div>
+<div class="work-heading reveal"><div><p class="section-overline">FEATURED PROJECT</p><h2 class="display-heading">HOME <em>HEARTH</em><span class="work-period">2-YEAR DEVELOPMENT</span></h2></div><p class="work-intro">完全自作のゲームエンジンを用いてゼロから構築した、ネットワーク同期型の3Dマルチプレイヤー・アクションゲーム。</p></div>
+<div class="work-main-grid">
+<div class="feature-media reveal">
+<button aria-label="Home Hearthのゲームプレイ画像を拡大" class="image-zoom" data-alt="Home Hearthの防衛設備配置シーン" data-image="assets/p07_01.webp" type="button">
+<img alt="Home Hearthのゲームプレイ。拠点防衛のために設備を配置する画面" loading="lazy" src="assets/p07_01.webp"/>
+<span aria-hidden="true" class="zoom-corner">↗</span>
+</button>
+<div class="media-caption"><span>IN-GAME SCREENSHOT</span><span>3D / ACTION / DEFENSE</span></div>
+</div>
+<div class="work-details reveal">
+<div class="detail-kicker">PROJECT PROFILE <span>01</span></div>
+<h3>遊びの裏側まで、<br/>自分の手で。</h3>
+<p>通信処理（TCP / UDP）から3Dレンダリング、物理演算まで、ゲームエンジンの根幹となるシステムを独自に設計・実装。最大4人で遊べる協力型の防衛アクションを制作しました。</p>
+<dl class="meta-list">
+<div><dt>開発環境</dt><dd>C++ / DirectX（自作エンジン）</dd></div>
+<div><dt>開発期間</dt><dd>2年間</dd></div>
+<div><dt>担当</dt><dd>メインプログラマー</dd></div>
+<div><dt>ジャンル</dt><dd>3Dマルチプレイヤー・アクション</dd></div>
+</dl>
+<div class="work-links"><a class="text-link" href="#home-video">PLAY DEMO REEL <span>↗</span></a><a class="text-link" download="" href="THUTA_ZAW_Portfolio.pdf">DOWNLOAD PDF <span>↓</span></a></div>
+</div>
+</div>
+<div class="awards reveal">
+<div class="awards-head"><span class="award-star">✳</span><div><p class="section-overline">RECOGNITION</p><h3>受賞歴</h3></div></div>
+<div class="award-entry"><span>01</span><p>DirectX オリジナルゲーム学内コンテスト</p><strong>技術力賞</strong></div>
+<div class="award-entry"><span>02</span><p>HAL EVENT WEEK</p><strong>独創力賞</strong></div>
+</div>
+</div>
+</section>
+<section class="section engineering-section" id="engineering">
+<div class="container">
+<div class="section-topline reveal"><span class="section-index">02 / UNDER THE HOOD</span><span class="thin-rule"></span><span class="section-aside">技術解説</span></div>
+<div class="section-title-row reveal"><div><p class="section-overline">ENGINEERING HIGHLIGHTS</p><h2 class="section-heading">見えない部分にこそ、<br/><em>こだわりを。</em></h2></div><p class="section-description">ゲームとしての体験だけでなく、その実現を支えるシステム設計と実装を紹介します。</p></div>
+<article class="tech-feature tech-feature-left reveal">
+<div class="tech-copy"><span class="tech-index">ENGINEERING / 01</span><div aria-hidden="true" class="tech-mini-icon">⌁</div><h3>TCP / UDP を用いた<br/>独自ネットワーク同期</h3><p>既存のゲームエンジンに頼らず、C++によるソケット通信を実装。サーバーとクライアント間のリアルタイム同期、最大4人のロビーシステムを構築しました。</p><div class="chip-row"><span>SOCKET PROGRAMMING</span><span>TCP / UDP</span><span>MULTIPLAYER</span></div></div>
+<div class="tech-visual"><button aria-label="ネットワークログを拡大" class="image-zoom tech-image" data-alt="TCPとUDPのソケット作成ログ" data-image="assets/p04_01.webp" type="button"><img alt="Home HearthのTCP / UDPサーバー起動時のコンソールログ" loading="lazy" src="assets/p04_01.webp"/></button><div class="tech-image-caption">SERVER / SOCKET INITIALIZATION</div></div>
+</article>
+<article class="tech-feature tech-feature-right reveal">
+<div class="tech-copy"><span class="tech-index">ENGINEERING / 02</span><div aria-hidden="true" class="tech-mini-icon">▦</div><h3>パスベースの<br/>3Dレンダリング</h3><p><code>IRenderPass</code> インターフェースを用いた拡張性のあるレンダリング設計。Shadow、DoF、Bloom、パーティクルなど複数の描画パスを統合し、マルチスレッド環境での処理を考慮しました。</p><div class="chip-row"><span>DIRECTX</span><span>RENDER PASS</span><span>POST EFFECTS</span></div></div>
+<div class="tech-visual tech-stack"><button aria-label="描画パイプラインのコードを拡大" class="image-zoom tech-image" data-alt="IRenderPassによる描画パイプラインのコード" data-image="assets/p05_02.webp" type="button"><img alt="IRenderPassインターフェースを使ったパスベース描画のコード" loading="lazy" src="assets/p05_02.webp"/></button><div class="tech-image-caption">RENDER PIPELINE / CODE</div></div>
+</article>
+<article class="tech-feature tech-feature-left reveal">
+<div class="tech-copy"><span class="tech-index">ENGINEERING / 03</span><div aria-hidden="true" class="tech-mini-icon">⇄</div><h3>デルタタイムによる<br/>キャラクター制御</h3><p>フレームレートの変動を考慮し、<code>elapsed_time</code> に基づく更新処理を実装。速度ベクトルや摩擦（減衰）を用いて、滑らかな移動表現を目指しました。</p><div class="chip-row"><span>DELTA TIME</span><span>VELOCITY</span><span>FRICTION</span></div></div>
+<div class="tech-visual"><button aria-label="キャラクター制御のコードを拡大" class="image-zoom tech-image" data-alt="デルタタイムによる速度・位置更新のコード" data-image="assets/p06_02.webp" type="button"><img alt="elapsed_timeを使った速度・位置更新と摩擦処理のC++コード" loading="lazy" src="assets/p06_02.webp"/></button><div class="tech-image-caption">CHARACTER CONTROLLER / CODE</div></div>
+</article>
+</div>
+</section>
+<section class="section systems-section" id="systems">
+<div class="container">
+<div class="section-topline reveal"><span class="section-index">03 / GAME SYSTEMS</span><span class="thin-rule"></span><span class="section-aside">ゲームシステム</span></div>
+<div class="section-title-row reveal"><div><p class="section-overline">GAMEPLAY &amp; DESIGN</p><h2 class="section-heading">遊びを支える、<br/><em>3つの仕組み。</em></h2></div></div>
+<div class="system-grid">
+<article class="system-card reveal"><div class="system-image"><img alt="罠・防御設備の建築とアップグレードを行うゲームUI" loading="lazy" src="assets/p07_02.webp"/></div><div class="system-body"><span class="system-no">01 / WAVE DEFENSE</span><h3>建築 × アクション</h3><p>迫りくる敵から拠点を守るウェーブ制防衛システム。リソースを使った防具・罠の配置と、プレイヤー自身の攻撃を組み合わせます。</p></div></article>
+<article class="system-card reveal"><div class="system-image"><img alt="4人用ロビーを複数表示する接続画面" loading="lazy" src="assets/p08_02.webp"/></div><div class="system-body"><span class="system-no">02 / MULTIPLAYER LOBBY</span><h3>4人協力プレイ</h3><p>IPアドレスとポートを指定する接続画面とロビーシステム。役割を分担しながら拠点を守る協力プレイの基盤を作りました。</p></div></article>
+<article class="system-card reveal"><div class="system-image"><img alt="ウィザードのスキルとクラス選択画面" loading="lazy" src="assets/p08_01.webp"/></div><div class="system-body"><span class="system-no">03 / CLASS ABILITIES</span><h3>個性のあるクラス</h3><p>ウィザードには範囲魔法、味方の回復、瞬間移動（Blink）などの固有アビリティを実装。クラス間の連携を意識した設計です。</p></div></article>
+</div>
+</div>
+</section>
+<section class="section gallery-section" id="gallery">
+<div class="container">
+<div class="section-topline reveal"><span class="section-index">04 / VISUAL ARCHIVE</span><span class="thin-rule"></span><span class="section-aside">スクリーンショット</span></div>
+<div class="section-title-row gallery-title reveal"><div><p class="section-overline">IN-GAME &amp; DEVELOPMENT</p><h2 class="section-heading">PROJECT <em>GALLERY.</em></h2></div><div aria-label="ギャラリーの種類" class="gallery-filters" role="group"><button aria-pressed="true" class="filter is-active" data-filter="all" type="button">ALL</button><button aria-pressed="false" class="filter" data-filter="gameplay" type="button">GAMEPLAY</button><button aria-pressed="false" class="filter" data-filter="code" type="button">CODE</button><button aria-pressed="false" class="filter" data-filter="models" type="button">3D ASSETS</button></div></div>
+<div class="gallery-grid">
+<button aria-label="ゲームプレイ画像を拡大" class="gallery-item gallery-wide reveal" data-alt="Home Hearthのゲームプレイ。家、キャラクター、ゲームUI" data-category="gameplay" data-image="assets/p05_01.webp" type="button"><img alt="Home Hearthの家とキャラクターがある3Dフィールド" loading="lazy" src="assets/p05_01.webp"/><span class="gallery-overlay"><strong>WORLD &amp; COMBAT</strong><span>GAMEPLAY ↗</span></span></button>
+<button aria-label="タイトル画面を拡大" class="gallery-item reveal" data-alt="Home Hearthのタイトル画面" data-category="gameplay" data-image="assets/p03_01.webp" type="button"><img alt="Home Hearthのタイトル画面と接続設定UI" loading="lazy" src="assets/p03_01.webp"/><span class="gallery-overlay"><strong>TITLE SCREEN</strong><span>GAMEPLAY ↗</span></span></button>
+<button aria-label="移動シーンを拡大" class="gallery-item reveal" data-alt="キャラクターが移動するゲームプレイ画面" data-category="gameplay" data-image="assets/p06_01.webp" type="button"><img alt="キャラクター移動のゲームプレイ画面" loading="lazy" src="assets/p06_01.webp"/><span class="gallery-overlay"><strong>CHARACTER MOVEMENT</strong><span>GAMEPLAY ↗</span></span></button>
+<button aria-label="ネットワークソースコードを拡大" class="gallery-item reveal" data-alt="ネットワーク実装のソースコード" data-category="code" data-image="assets/p04_02.webp" type="button"><img alt="サーバー接続処理のC++ソースコード" loading="lazy" src="assets/p04_02.webp"/><span class="gallery-overlay"><strong>NETWORK CODE</strong><span>CODE ↗</span></span></button>
+<button aria-label="レンダリングソースコードを拡大" class="gallery-item reveal" data-alt="3Dレンダリングのソースコード" data-category="code" data-image="assets/p05_02.webp" type="button"><img alt="3Dレンダーパス処理のC++ソースコード" loading="lazy" src="assets/p05_02.webp"/><span class="gallery-overlay"><strong>RENDER PASS</strong><span>CODE ↗</span></span></button>
+<button aria-label="ナイトモデルを拡大" class="gallery-item reveal" data-alt="ナイトのオリジナル3Dモデル" data-category="models" data-image="assets/p09_03.webp" type="button"><img alt="オリジナルのナイトの3Dキャラクターモデル" loading="lazy" src="assets/p09_03.webp"/><span class="gallery-overlay"><strong>KNIGHT</strong><span>3D ASSET ↗</span></span></button>
+<button aria-label="ウィザードモデルを拡大" class="gallery-item reveal" data-alt="ウィザードのオリジナル3Dモデル" data-category="models" data-image="assets/p09_01.webp" type="button"><img alt="オリジナルのウィザードの3Dキャラクターモデル" loading="lazy" src="assets/p09_01.webp"/><span class="gallery-overlay"><strong>WIZARD</strong><span>3D ASSET ↗</span></span></button>
+<button aria-label="村人モデルを拡大" class="gallery-item reveal" data-alt="村人のオリジナル3Dモデル" data-category="models" data-image="assets/p09_02.webp" type="button"><img alt="オリジナルの村人の3Dキャラクターモデル" loading="lazy" src="assets/p09_02.webp"/><span class="gallery-overlay"><strong>VILLAGER</strong><span>3D ASSET ↗</span></span></button>
+</div>
+<div class="asset-note reveal"><span class="asset-icon">↳</span><p>3Dツールからのモデルエクスポート、マテリアル・シェーディング・ライティングの管理を含む、オリジナルのアセットパイプラインを構築しました。</p></div>
+</div>
+</section>
+<!-- HOME HEARTH / PLAY VIDEO — after the complete project explanation and gallery -->
+<section aria-labelledby="home-video-title" class="section home-video-section" id="home-video">
+<div class="container">
+<div class="section-topline reveal"><span class="section-index">05 / HOME HEARTH VIDEO</span><span class="thin-rule"></span><span class="section-aside">メインプロジェクトのプレイ動画</span></div>
+<div class="chroma-video home-hearth-video reveal">
+<div>
+<p class="section-overline">GAMEPLAY DEMONSTRATION</p>
+<h2 id="home-video-title">Home Hearth<br/>プレイ動画</h2>
+<p>自作のC++ / DirectXエンジンで制作した3Dマルチプレイヤー・アクションのデモリールです。ゲーム画面と開発成果をご覧いただけます。</p>
+</div>
+<div aria-label="Home Hearth プレイ動画" class="chroma-embed portfolio-video home-hearth-video-frame" data-video-id="yKtJmHyz2-I" data-video-title="Home Hearth デモリール">
+<img alt="Home Hearthの3Dゲームプレイ画面" class="portfolio-video-poster" loading="lazy" src="assets/p05_01.webp"/>
+<div class="portfolio-video-overlay">
+<span class="portfolio-video-eyebrow">HOME HEARTH · GAMEPLAY DEMO</span>
+<strong>プレイ動画を見る</strong>
+<div class="portfolio-video-actions">
+<a class="portfolio-video-cta" href="https://www.youtube.com/watch?v=yKtJmHyz2-I" rel="noopener noreferrer" target="_blank">▶ YouTubeで見る ↗</a>
+<button class="portfolio-video-embed-button" hidden="" type="button">サイト内で再生 ▶</button>
+</div>
+<p class="portfolio-video-hint">動画はYouTubeで開きます。</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="chroma-title" class="section chroma-section" id="chroma">
+<div class="container">
+<div class="section-topline reveal"><span class="section-index">06 / SECOND PROJECT</span><span class="thin-rule"></span><span class="section-aside">DirectX 2D作品</span></div>
+<div class="work-heading reveal"><div><p class="section-overline">2D GAME PROJECT</p><h2 class="display-heading" id="chroma-title">CHROMA <em>PAINTER</em></h2></div><p class="work-intro">色の効果を活用してステージを攻略する、C++ / DirectX製の2Dプラットフォームゲーム。</p></div>
+<div class="chroma-feature reveal"><img alt="Chroma Painterの実際のプレイ画面。レンガの足場、はしご、キャラクター、敵が並ぶ2Dステージ" loading="lazy" src="assets/chroma-2.webp"/><div class="chroma-summary"><p class="section-overline">GAME OVERVIEW</p><h3>色で変わる、アクション。</h3><p>プレイヤーが色の異なる弾を使い、ステージ内のオブジェクトの性質を変化させながら進む2Dアクションゲーム。赤・青・黄の効果や、透明ブロックを可視化する仕組みを組み合わせています。</p><div class="chip-row"><span>C++</span><span>DIRECTX 2D</span><span>PLATFORMER</span></div><p class="chroma-note">主な操作：A / D（移動）、W / S（はしご）、Space（ジャンプ）、1 / 2 / 3（赤・青・黄の選択）、左クリック（発射）</p><div class="work-links"><a class="text-link" href="chroma-painter.html">TECHNICAL BREAKDOWN <span>↗</span></a><a class="text-link" href="https://youtu.be/ief-NCYxMj0" rel="noopener noreferrer" target="_blank">WATCH GAMEPLAY ↗</a></div></div></div>
+<div class="chroma-mechanics reveal"><div><strong>01 / PAINT SYSTEM</strong><h3>色で変わる足場</h3><p>射出したペイント弾が着弾すると、塗装可能なタイルの状態を変更。赤は反発、青は滑走、黄は壁面での動きに変化を与えます。</p></div><div><strong>02 / LEVEL &amp; COLLISION</strong><h3>50 × 28タイルのステージ</h3><p>32px単位のマップデータをもとに足場・はしご・敵などを配置。矩形当たり判定と速度更新で移動を制御します。</p></div><div><strong>03 / GAME FLOW</strong><h3>操作からクリアまで</h3><p>アニメーション、カラー切り替え、敵との戦闘、フェード演出、タイトル／ゲーム／リザルトのシーン遷移を実装しました。</p></div></div>
+<div class="chroma-gallery reveal"><figure><img alt="Chroma Painterのカラフルなタイトル画面" loading="lazy" src="assets/chroma-1.webp"/><figcaption>TITLE SCREEN</figcaption></figure><figure><img alt="Chroma Painterの2Dゲームプレイ画面" loading="lazy" src="assets/chroma-2.webp"/><figcaption>GAMEPLAY</figcaption></figure><figure><img alt="Chroma PainterのYOU WONクリア画面" loading="lazy" src="assets/chroma-3.webp"/><figcaption>VICTORY SCREEN</figcaption></figure></div>
+<div class="chroma-video reveal"><div><p class="section-overline">GAMEPLAY DEMONSTRATION</p><h3>プレイ動画</h3><p>ゲームの操作やステージの様子を動画で確認できます。</p></div><div aria-label="Chroma Painter プレイ動画" class="chroma-embed portfolio-video" data-video-id="ief-NCYxMj0">
+<img alt="Chroma Painterのプレイ画面" class="portfolio-video-poster" loading="lazy" src="assets/chroma-2.webp"/>
+<div class="portfolio-video-overlay">
+<span class="portfolio-video-eyebrow">CHROMA PAINTER · GAMEPLAY DEMO</span>
+<strong>プレイ動画を見る</strong>
+<div class="portfolio-video-actions">
+<a class="portfolio-video-cta" href="https://www.youtube.com/watch?v=ief-NCYxMj0" rel="noopener noreferrer" target="_blank">▶ YouTubeで見る ↗</a>
+<button class="portfolio-video-embed-button" hidden="" type="button">サイト内で再生 ▶</button>
+</div>
+<p class="portfolio-video-hint">動画はYouTubeで開きます。</p>
+</div>
+</div></div>
+<p class="chroma-note chroma-submission-note">※ 実行ファイル（Windowsビルド）とソースコードは、応募先の提出方法に合わせて別途提出します。Webサイトには含まれません。 <a href="chroma-painter.html">実装の詳細を見る ↗</a></p>
+</div>
+</section>
+<!-- PROJECT 03 — placed after the COMPLETE Chroma Painter section -->
+<section aria-labelledby="space-title" class="section space-section" id="space">
+<div class="container">
+<div class="section-topline reveal"><span class="section-index">07 / THIRD PROJECT</span><span class="thin-rule"></span><span class="section-aside">Unity 2D作品</span></div>
+<div class="work-heading reveal space-heading"><div><p class="section-overline">UNITY 6 · C# / SHOOT 'EM UP</p><h2 class="display-heading" id="space-title">SPACE <em>SHOOTER</em></h2></div><p class="work-intro">宇宙船を操作し、迫り来る障害物や敵に立ち向かう2Dシューティングゲーム。エネルギー管理やウェーブ進行、ボス戦などを実装しています。</p></div>
+<div class="space-spotlight reveal">
+<div class="space-spotlight-visual">
+<img alt="Space Shooterの実際のゲームプレイ。宇宙船、惑星風の障害物、体力とエネルギーUI" loading="lazy" src="assets/space-gameplay.webp"/>
+<div class="space-image-label"><span class="space-glow-dot"></span> ACTUAL GAMEPLAY <span>PROJECT 03 / UNITY 2D</span></div>
+</div>
+<div class="space-spotlight-content"><p class="section-overline">GAME OVERVIEW</p><h3>宇宙を切り抜け、<br/>次のウェーブへ。</h3><p>プレイヤーは小型宇宙船を操縦し、アステロイドや敵を回避・攻撃しながら先へ進みます。HPとエネルギーを管理し、ステージの終盤には大型の敵が待ち受けます。</p><div class="chip-row space-tags"><span>UNITY 6</span><span>C#</span><span>2D SHOOTER</span><span>WAVE SYSTEM</span></div><div class="work-links"><a class="text-link" href="space-shooter.html">PROJECT DETAILS <span>↗</span></a><a class="text-link" href="https://youtu.be/JkXF_XDdTvg" rel="noopener noreferrer" target="_blank">WATCH GAMEPLAY <span>↗</span></a></div></div>
+</div>
+<div class="space-highlights reveal">
+<article><span>01 / PLAYER SYSTEM</span><h3>エネルギー &amp; HP管理</h3><p>プレイヤーの体力・エネルギーを表示。Unity Inspectorには移動速度、ブースト、エネルギー回復などの設定項目が確認できます。</p></article>
+<article><span>02 / SPAWNING SYSTEM</span><h3>ウェーブ &amp; オブジェクトプール</h3><p>敵や障害物を段階的に出現させるウェーブ構成。複数のオブジェクトプールを使用する管理構成をUnity Editor上で確認できます。</p></article>
+<article><span>03 / GAME FLOW</span><h3>タイトル・ポーズ・クリア</h3><p>メニュー画面、ポーズ状態、ステージ完了画面までを用意。ゲーム進行を支えるUIとシーン構成を紹介します。</p></article>
+</div>
+<div aria-label="Space Shooterのスクリーンショット" class="space-stills reveal">
+<figure><button class="space-zoom" data-alt="Space Shooterのタイトル画面" data-image="assets/space-title.webp" type="button"><img alt="SPACE SHOOTERタイトル画面とNEW GAMEボタン" loading="lazy" src="assets/space-title.webp"/></button><figcaption>01 / TITLE SCREEN</figcaption></figure>
+<figure><button class="space-zoom" data-alt="Space Shooterの大型敵との戦闘" data-image="assets/space-boss.webp" type="button"><img alt="宇宙船と大型の敵が対峙するゲーム画面" loading="lazy" src="assets/space-boss.webp"/></button><figcaption>02 / ENCOUNTER</figcaption></figure>
+<figure><button class="space-zoom" data-alt="Space Shooterのミッション完了画面" data-image="assets/space-complete.webp" type="button"><img alt="MISSION COMPLETEとNEXT LEVELボタンの画面" loading="lazy" src="assets/space-complete.webp"/></button><figcaption>03 / MISSION COMPLETE</figcaption></figure>
+</div>
+<div class="space-video-block reveal">
+<div><p class="section-overline">GAMEPLAY DEMONSTRATION</p><h3>プレイ動画</h3><p>実際のゲーム画面とステージの流れをご覧いただけます。</p><a class="space-small-link" href="space-shooter.html#technical">実装構成の解説を見る ↗</a></div>
+<div aria-label="Space Shooter プレイ動画" class="space-video-frame portfolio-video" data-video-id="JkXF_XDdTvg" data-video-title="Space Shooter プレイ動画">
+<img alt="Space Shooterのゲームプレイ画像" class="portfolio-video-poster" loading="lazy" src="assets/space-gameplay.webp"/>
+<div class="portfolio-video-overlay"><span class="portfolio-video-eyebrow">SPACE SHOOTER · GAMEPLAY DEMO</span><strong>プレイ動画を見る</strong><div class="portfolio-video-actions"><a class="portfolio-video-cta" href="https://www.youtube.com/watch?v=JkXF_XDdTvg" rel="noopener noreferrer" target="_blank">▶ YouTubeで見る ↗</a><button class="portfolio-video-embed-button" hidden="" type="button">サイト内で再生 ▶</button></div><p class="portfolio-video-hint">動画はYouTubeで開きます。</p></div>
+</div>
+</div>
+<p class="space-submission-note reveal">※ 実行ファイル・Unityプロジェクト・C#ソースコードは応募先への提出時に別途共有します。この公開サイトには含めていません。 <a href="space-shooter.html">Space Shooterの詳細ページ ↗</a></p>
+</div>
+</section>
+<section class="section about-section" id="about">
+<div class="container">
+<div class="section-topline reveal"><span class="section-index">08 / ABOUT THE DEVELOPER</span><span class="thin-rule"></span><span class="section-aside">自己紹介</span></div>
+<div class="about-grid">
+<div class="about-left reveal"><p class="section-overline">ABOUT ME</p><h2 class="about-display">THUTA<br/><em>ZAW.</em></h2><div class="about-role">GAME PROGRAMMER <span>・</span> HAL TOKYO</div><div aria-hidden="true" class="about-decoration">TZ<span>＊</span></div></div>
+<div class="about-right reveal"><p class="about-lead">「コードがどう動くか」という<br/>根幹の探求。</p><p>DirectXやC++を用いた開発経験を活かし、ハードウェアレベルでコードがどのように処理されるのかを意識しながら実装を行っています。</p><p>現在のUnityやC#の知識を土台に、今後はUnreal Engineの学習にも取り組み、ゲームエンジンのアーキテクチャへの理解をさらに深めたいと考えています。</p><div class="skills-block"><h3>TECH STACK <span>技術・学習分野</span></h3><div class="skill-list"><span>C++</span><span>DirectX</span><span>TCP / UDP</span><span>3D Rendering</span><span>Unity</span><span>C#</span><span>3D Assets</span></div><p class="learning-note">NEXT TO LEARN → UNREAL ENGINE</p></div></div>
+</div>
+</div>
+</section>
+<section class="section contact-section" id="contact">
+<div class="container">
+<div class="section-topline reveal"><span class="section-index">09 / GET IN TOUCH</span><span class="thin-rule"></span><span class="section-aside">お問い合わせ</span></div>
+<div class="contact-content reveal"><p class="section-overline">LET'S CONNECT</p><h2>一緒に、<br/><em>次のゲームを。</em></h2><p>採用についてのお問い合わせや、作品に関するご質問はメールでお気軽にご連絡ください。</p><a class="email-link" href="mailto:ttzdg78@gmail.com">ttzdg78@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-actions"><a class="btn btn-primary" href="mailto:ttzdg78@gmail.com?subject=Portfolio%20Inquiry">メールを送る ↗</a><a class="btn btn-outline resume-button" href="THUTA_ZAW_Rirekisho.pdf" rel="noopener" target="_blank" type="application/pdf">履歴書を見る（PDF） ↗</a></div></div>
+<footer class="footer"><a class="footer-brand" href="#top">TZ<span>/</span></a><span>© <span id="year">2026</span> THUTA ZAW</span><span>DESIGNED FOR THE LOVE OF GAME DEVELOPMENT</span><a class="back-to-top" href="#top">BACK TO TOP ↑</a></footer>
+</div>
+</section>
+</main>
+<dialog aria-label="画像を拡大表示" class="lightbox" id="lightbox"><div class="lightbox-inner"><button aria-label="拡大表示を閉じる" class="lightbox-close" id="lightbox-close" type="button">×</button><img alt="" id="lightbox-img"/><p id="lightbox-caption"></p></div></dialog>
 </body>
 </html>

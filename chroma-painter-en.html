@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#0d1015" name="theme-color"/>
+<meta content="THUTA ZAW | Game programmer portfolio featuring Home Hearth, Chroma Painter and Space Shooter. C++, DirectX, Unity and C#." name="description"/>
+<meta content="Chroma Painter | THUTA ZAW" property="og:title"/>
+<meta content="Three game programming projects: Home Hearth, Chroma Painter and Space Shooter — C++ / DirectX / Unity / C#." property="og:description"/>
+<title>Chroma Painter — THUTA ZAW | Game Programmer</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="chroma-detail.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
+<script defer="" src="video-embed.js"></script>
+<link href="chroma-painter.html" hreflang="ja" rel="alternate"/><link href="chroma-painter-en.html" hreflang="en" rel="alternate"/><link href="language.css" rel="stylesheet"/></head>
+<body class="project-page">
+<div aria-hidden="true" class="page-progress" id="page-progress"></div>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" id="top">
+<div class="header-inner container">
+<a aria-label="Return to portfolio homepage" class="brand" href="index-en.html">
+<span class="brand-symbol">T<span class="brand-accent">/</span>Z</span>
+<span class="brand-label">THUTA ZAW <small>GAME PROGRAMMER</small></span>
+</a>
+<nav aria-label="In-page navigation" class="desktop-nav">
+<a href="index-en.html#work">ALL WORK</a>
+<a href="#overview">OVERVIEW</a>
+<a href="#technical">ENGINEERING</a>
+<a href="#screenshots">GALLERY</a>
+<a href="#video">VIDEO</a>
+</nav>
+<a class="header-contact" href="index-en.html#contact">CONTACT <span aria-hidden="true">↗</span></a>
+<div aria-label="Game portfolio visual" class="language-switcher" role="group"><a class="language-choice" href="chroma-painter.html" hreflang="ja" lang="ja">日本語</a><a aria-current="page" class="language-choice active" href="chroma-painter-en.html" hreflang="en" lang="en">EN</a></div><button aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu" class="menu-toggle" id="menu-toggle" type="button"><span></span><span></span></button>
+</div>
+<nav aria-label="Mobile navigation" class="mobile-nav" hidden="" id="mobile-nav">
+<a href="index-en.html#work">ALL WORK</a><a href="#overview">OVERVIEW</a><a href="#technical">ENGINEERING</a><a href="#screenshots">GALLERY</a><a href="#video">VIDEO</a><a href="index-en.html#contact">CONTACT</a>
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="cp-title" class="cp-hero">
+<div aria-hidden="true" class="cp-colorrail"><span></span><span></span><span></span><span></span></div>
+<div class="container cp-hero-inner">
+<a class="cp-back" href="index-en.html#chroma">← ALL PROJECTS</a>
+<div class="cp-hero-top">
+<div class="cp-hero-copy">
+<p class="cp-kicker">02 / GAME PROJECT — C++ &amp; DIRECTX 11</p>
+<h1 id="cp-title">CHROMA<br/><em>PAINTER</em><span class="cp-title-dot">.</span></h1>
+<p class="cp-lead">Paint the world.<br/>Change its rules.</p>
+<p class="cp-lead-sub">A 2D platform action game where you use different paint properties to reach the goal. I implemented C++ gameplay systems that change platform behavior when paint projectiles hit.</p>
+<div class="cp-hero-tags"><span>C++</span><span>DIRECTX 11</span><span>2D PLATFORMER</span><span>VISUAL STUDIO</span></div>
+<div class="cp-hero-actions">
+<a class="btn btn-primary" href="#video">WATCH GAMEPLAY <span aria-hidden="true">↗</span></a>
+<a class="btn btn-outline" href="#technical">ENGINEERING <span aria-hidden="true">↓</span></a>
+</div>
+</div>
+<div class="cp-hero-art">
+<img alt="Chroma Painter screenshot or artwork" fetchpriority="high" src="assets/chroma-1.webp"/>
+<span class="cp-image-label">TITLE SCREEN / 2025</span>
+</div>
+</div>
+<div class="cp-facts">
+<div><span>PROJECT</span><strong>Chroma Painter</strong></div>
+<div><span>ENGINE</span><strong>DirectX 11 / C++</strong></div>
+<div><span>GENRE</span><strong>2D Action / Puzzle</strong></div>
+<div><span>ROLE</span><strong>Game programming</strong></div>
+</div>
+</div>
+</section>
+<section class="cp-section cp-overview" id="overview">
+<div class="container">
+<div class="cp-section-heading"><span class="cp-counter">01 / OVERVIEW</span><h2>Use color<br/><em>to find a way forward.</em></h2></div>
+<div class="cp-overview-grid">
+<div class="cp-overview-shot">
+<img alt="Chroma Painter screenshot or artwork" loading="lazy" src="assets/chroma-2.webp"/>
+<div class="cp-shot-caption"><span>ACTUAL GAMEPLAY</span><span>DIRECTX / 2D</span></div>
+</div>
+<div class="cp-overview-copy">
+<p>Switch among red, blue and yellow paint, shooting paintable blocks to progress. Each color changes movement—bouncing, sliding or wall traversal—combining action with puzzle decisions.</p>
+<p>Use enemy color weaknesses, temporary solid slime platforms and ladders to reach the door on the right side of the level.</p>
+<p class="cp-smallprint">These implementation notes are based on the C++ source code and game documentation supplied for review.</p>
+</div>
+</div>
+<div aria-label="Game portfolio visual" class="cp-colors">
+<article class="cp-color-card cp-red"><span class="cp-color-number">01 — RED</span><span aria-hidden="true" class="cp-color-icon">↥</span><h3>Bounce</h3><p>Landing on a red-painted platform applies upward velocity for a bounce.</p></article>
+<article class="cp-color-card cp-blue"><span class="cp-color-number">02 — BLUE</span><span aria-hidden="true" class="cp-color-icon">⇢</span><h3>Slide</h3><p>Blue platforms alter acceleration and damping to create slippery movement.</p></article>
+<article class="cp-color-card cp-yellow"><span class="cp-color-number">03 — YELLOW</span><span aria-hidden="true" class="cp-color-icon">⊕</span><h3>Wall movement</h3><p>Yellow paint reduces wall-fall speed and enables wall jumps. Color is also used for enemy weaknesses.</p></article>
+</div>
+</div>
+</section>
+<section class="cp-section cp-technical" id="technical">
+<div class="container">
+<div class="cp-section-heading"><span class="cp-counter">02 / ENGINEERING</span><h2>Implemented<br/><em>game systems.</em></h2><p class="cp-heading-desc">A technical breakdown of the C++ game logic that shapes how the game feels.</p></div>
+<div class="cp-tech-list">
+<article class="cp-tech-row"><div class="cp-tech-id">01</div><div class="cp-tech-title"><span class="cp-tech-kicker">PAINT COLLISION</span><h3>Paint projectiles &amp;<br/>block-state control</h3></div><div class="cp-tech-copy"><p>Mouse input creates paint projectiles. Collision checks identify the hit tile, then update its color state, appearance and gameplay behavior.</p><div class="cp-tech-tags"><span>Projectile</span><span>Tile state</span><span>ColorType</span></div></div></article>
+<article class="cp-tech-row"><div class="cp-tech-id">02</div><div class="cp-tech-title"><span class="cp-tech-kicker">TILE MAP / COLLISION</span><h3>50 × 28 tile<br/>level management</h3></div><div class="cp-tech-copy"><p>I manage 32×32-pixel tiles in a two-dimensional array to position blocks, ladders, enemies and items. Rectangle collisions and position correction handle landing, wall contact and movement.</p><div class="cp-tech-tags"><span>32px tiles</span><span>AABB collision</span><span>Level data</span></div></div></article>
+<article class="cp-tech-row"><div class="cp-tech-id">03</div><div class="cp-tech-title"><span class="cp-tech-kicker">CHARACTER CONTROLLER</span><h3>Movement, animation &amp;<br/>ladder controls</h3></div><div class="cp-tech-copy"><p>Position and velocity update using elapsed time. Jumping, wall jumping and ladder movement are controlled alongside sprite animations for different states and directions.</p><div class="cp-tech-tags"><span>Delta time</span><span>Sprite animation</span><span>Ladder</span></div></div></article>
+<article class="cp-tech-row"><div class="cp-tech-id">04</div><div class="cp-tech-title"><span class="cp-tech-kicker">ENEMIES / SCENE FLOW</span><h3>Enemy weaknesses &amp;<br/>scene transitions</h3></div><div class="cp-tech-copy"><p>I implemented enemies with color weaknesses and HP, and a system to turn slime temporarily solid. Reaching the goal triggers a fade and transitions through title, gameplay and result scenes.</p><div class="cp-tech-tags"><span>Enemy logic</span><span>Scene transition</span><span>Fade</span></div></div></article>
+</div>
+</div>
+</section>
+<section aria-labelledby="controls-title" class="cp-section cp-controls">
+<div class="container cp-controls-grid">
+<div><span class="cp-counter">03 / CONTROLS</span><h2 id="controls-title">Controls</h2><p>Simple controls make it easy to experiment with color-based actions.</p></div>
+<div class="cp-keys">
+<div><kbd>A</kbd><kbd>D</kbd><span>Move left/right</span></div>
+<div><kbd>W</kbd><kbd>S</kbd><span>Climb ladder</span></div>
+<div><kbd>SPACE</kbd><span>Jump</span></div>
+<div><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><span>Select red / blue / yellow</span></div>
+<div><kbd>LEFT CLICK</kbd><span>Fire paint projectile</span></div>
+</div>
+</div>
+</section>
+<section class="cp-section cp-gallery" id="screenshots">
+<div class="container">
+<div class="cp-section-heading"><span class="cp-counter">04 / VISUALS</span><h2>SCREEN<em>SHOTS.</em></h2></div>
+<div class="cp-image-grid">
+<figure class="cp-screen cp-screen-main"><button data-alt="Chroma Painter screenshot or artwork" data-image="assets/chroma-2.webp" type="button"><img alt="Game portfolio visual" loading="lazy" src="assets/chroma-2.webp"/><span class="cp-zoom">Enlarge ↗</span></button><figcaption>01 / GAMEPLAY</figcaption></figure>
+<figure class="cp-screen"><button data-alt="Chroma Painter screenshot or artwork" data-image="assets/chroma-1.webp" type="button"><img alt="Game portfolio visual" loading="lazy" src="assets/chroma-1.webp"/><span class="cp-zoom">Enlarge ↗</span></button><figcaption>02 / TITLE SCREEN</figcaption></figure>
+<figure class="cp-screen"><button data-alt="Chroma Painter screenshot or artwork" data-image="assets/chroma-3.webp" type="button"><img alt="Game portfolio visual" loading="lazy" src="assets/chroma-3.webp"/><span class="cp-zoom">Enlarge ↗</span></button><figcaption>03 / RESULT SCREEN</figcaption></figure>
+</div>
+</div>
+</section>
+<section class="cp-section cp-video-section" id="video">
+<div class="container">
+<div class="cp-video-head"><div><span class="cp-counter">05 / GAMEPLAY VIDEO</span><h2>SEE IT <em>IN ACTION.</em></h2></div><a class="cp-video-link" href="https://youtu.be/ief-NCYxMj0" rel="noopener noreferrer" target="_blank">Watch on YouTube ↗</a></div>
+<div aria-label="Chroma Painter screenshot or artwork" class="cp-video-frame portfolio-video" data-video-id="ief-NCYxMj0">
+<img alt="Chroma Painter screenshot or artwork" class="portfolio-video-poster" loading="lazy" src="assets/chroma-2.webp"/>
+<div class="portfolio-video-overlay">
+<span class="portfolio-video-eyebrow">CHROMA PAINTER · GAMEPLAY DEMO</span>
+<strong>Watch gameplay</strong>
+<div class="portfolio-video-actions">
+<a class="portfolio-video-cta" href="https://www.youtube.com/watch?v=ief-NCYxMj0" rel="noopener noreferrer" target="_blank">▶ Watch on YouTube ↗</a>
+<button class="portfolio-video-embed-button" hidden="" type="button">Play on this page ▶</button>
+</div>
+<p class="portfolio-video-hint">The video opens on YouTube.</p>
+</div>
+</div>
+<div class="cp-delivery"><div><span class="cp-delivery-label">SUBMISSION MATERIALS</span><h3>Source code &amp; executable</h3><p>The Windows build and complete C++ project will be provided separately in the format required by each employer. Neither the executable nor the source files are downloadable from this public website.</p></div><a class="btn btn-outline" href="index-en.html#contact">CONTACT ↗</a></div>
+</div>
+</section>
+<section class="cp-footer-cta"><div class="container"><span>THANK YOU FOR VIEWING</span><h2>BACK TO <em>PORTFOLIO.</em></h2><a class="btn btn-primary" href="index-en.html#work">View all projects <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="cp-footer"><div class="container"><span>© <span id="year">2026</span> THUTA ZAW</span><a href="index-en.html">MAIN PORTFOLIO ↗</a></div></footer>
+<dialog aria-label="Enlarge screenshot" class="lightbox" id="lightbox">
+<button aria-label="Game portfolio visual" class="lightbox-close" id="lightbox-close" type="button">×</button>
+<img alt="" id="lightbox-img"/><p id="lightbox-caption"></p>
+</dialog>
+</body>
+</html>

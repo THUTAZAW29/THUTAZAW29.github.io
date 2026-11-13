@@ -1,156 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0d1015">
-  <meta name="description" content="Chroma Painter — THUTA ZAWによるC++ / DirectX 11製2Dアクションゲーム。色塗りギミック、タイルマップ、当たり判定、シーン制御などの実装を紹介。">
-  <meta property="og:title" content="Chroma Painter | THUTA ZAW">
-  <meta property="og:description" content="色で道を切り開くC++ / DirectX 11の2Dアクションゲーム">
-  <title>Chroma Painter — THUTA ZAW | Game Programmer</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="chroma-detail.css">
-  <script defer src="script.js"></script>
-  <script defer src="video-embed.js"></script>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#0d1015" name="theme-color"/>
+<meta content="Chroma Painter — THUTA ZAWによるC++ / DirectX 11製2Dアクションゲーム。色塗りギミック、タイルマップ、当たり判定、シーン制御などの実装を紹介。" name="description"/>
+<meta content="Chroma Painter | THUTA ZAW" property="og:title"/>
+<meta content="色で道を切り開くC++ / DirectX 11の2Dアクションゲーム" property="og:description"/>
+<title>Chroma Painter — THUTA ZAW | Game Programmer</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="chroma-detail.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
+<script defer="" src="video-embed.js"></script>
+<link href="chroma-painter.html" hreflang="ja" rel="alternate"/><link href="chroma-painter-en.html" hreflang="en" rel="alternate"/><link href="language.css" rel="stylesheet"/></head>
 <body class="project-page">
-  <div class="page-progress" id="page-progress" aria-hidden="true"></div>
-  <a class="skip-link" href="#main">本文へスキップ</a>
-  <header class="site-header" id="top">
-    <div class="header-inner container">
-      <a class="brand" href="index.html" aria-label="ポートフォリオのトップへ戻る">
-        <span class="brand-symbol">T<span class="brand-accent">/</span>Z</span>
-        <span class="brand-label">THUTA ZAW <small>GAME PROGRAMMER</small></span>
-      </a>
-      <nav class="desktop-nav" aria-label="ページ内メニュー">
-        <a href="index.html#work">ALL WORK</a>
-        <a href="#overview">OVERVIEW</a>
-        <a href="#technical">ENGINEERING</a>
-        <a href="#screenshots">GALLERY</a>
-        <a href="#video">VIDEO</a>
-      </nav>
-      <a class="header-contact" href="index.html#contact">CONTACT <span aria-hidden="true">↗</span></a>
-      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
-    </div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="モバイルメニュー" hidden>
-      <a href="index.html#work">ALL WORK</a><a href="#overview">OVERVIEW</a><a href="#technical">ENGINEERING</a><a href="#screenshots">GALLERY</a><a href="#video">VIDEO</a><a href="index.html#contact">CONTACT</a>
-    </nav>
-  </header>
-  <main id="main">
-    <section class="cp-hero" aria-labelledby="cp-title">
-      <div class="cp-colorrail" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-      <div class="container cp-hero-inner">
-        <a href="index.html#chroma" class="cp-back">← ALL PROJECTS</a>
-        <div class="cp-hero-top">
-          <div class="cp-hero-copy">
-            <p class="cp-kicker">02 / GAME PROJECT — C++ &amp; DIRECTX 11</p>
-            <h1 id="cp-title">CHROMA<br><em>PAINTER</em><span class="cp-title-dot">.</span></h1>
-            <p class="cp-lead">色を塗る。<br>世界のルールが変わる。</p>
-            <p class="cp-lead-sub">色ごとの性質を使い分けてゴールを目指す、2Dプラットフォームアクション。ペイント弾の着弾によって足場の挙動が変わるゲームシステムを、C++で実装しました。</p>
-            <div class="cp-hero-tags"><span>C++</span><span>DIRECTX 11</span><span>2D PLATFORMER</span><span>VISUAL STUDIO</span></div>
-            <div class="cp-hero-actions">
-              <a class="btn btn-primary" href="#video">WATCH GAMEPLAY <span aria-hidden="true">↗</span></a>
-              <a class="btn btn-outline" href="#technical">ENGINEERING <span aria-hidden="true">↓</span></a>
-            </div>
-          </div>
-          <div class="cp-hero-art">
-            <img src="assets/chroma-1.webp" alt="Chroma Painterの色鮮やかなタイトル画面" fetchpriority="high">
-            <span class="cp-image-label">TITLE SCREEN / 2025</span>
-          </div>
-        </div>
-        <div class="cp-facts">
-          <div><span>PROJECT</span><strong>Chroma Painter</strong></div>
-          <div><span>ENGINE</span><strong>DirectX 11 / C++</strong></div>
-          <div><span>GENRE</span><strong>2D Action / Puzzle</strong></div>
-          <div><span>ROLE</span><strong>Game programming</strong></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="overview" class="cp-section cp-overview">
-      <div class="container">
-        <div class="cp-section-heading"><span class="cp-counter">01 / OVERVIEW</span><h2>色を使って、<br><em>道を切り開く。</em></h2></div>
-        <div class="cp-overview-grid">
-          <div class="cp-overview-shot">
-            <img src="assets/chroma-2.webp" alt="レンガの足場、はしご、敵キャラクターが配置されたChroma Painterのゲーム画面" loading="lazy">
-            <div class="cp-shot-caption"><span>ACTUAL GAMEPLAY</span><span>DIRECTX / 2D</span></div>
-          </div>
-          <div class="cp-overview-copy">
-            <p>プレイヤーは赤・青・黄のペイントを切り替え、ステージ上の塗装可能なブロックに弾を当てながら進みます。色によって反発、滑走、壁面移動などの動きが変わるため、アクションとパズルの両方の判断が必要です。</p>
-            <p>敵の弱点色、スライムの一時的な足場化、はしごによる上下移動などを組み合わせ、ステージ右端のドアを目指します。</p>
-            <p class="cp-smallprint">本ページの実装説明は、提出用アーカイブ内のC++ソースとゲーム説明資料を確認して作成しています。</p>
-          </div>
-        </div>
-        <div class="cp-colors" aria-label="3色のペイント効果">
-          <article class="cp-color-card cp-red"><span class="cp-color-number">01 — RED</span><span class="cp-color-icon" aria-hidden="true">↥</span><h3>跳ねる</h3><p>赤く塗った足場に着地すると、上向きの速度を与える反発ギミック。</p></article>
-          <article class="cp-color-card cp-blue"><span class="cp-color-number">02 — BLUE</span><span class="cp-color-icon" aria-hidden="true">⇢</span><h3>滑る</h3><p>青い足場では加速や減衰が変わり、通常とは違う滑りやすさを表現。</p></article>
-          <article class="cp-color-card cp-yellow"><span class="cp-color-number">03 — YELLOW</span><span class="cp-color-icon" aria-hidden="true">⊕</span><h3>壁を使う</h3><p>壁面の落下速度を抑え、壁ジャンプのきっかけを作る。敵の弱点色にも利用。</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="technical" class="cp-section cp-technical">
-      <div class="container">
-        <div class="cp-section-heading"><span class="cp-counter">02 / ENGINEERING</span><h2>実装した<br><em>ゲームシステム。</em></h2><p class="cp-heading-desc">ゲームの手触りを支える部分を、ゲームロジックとC++の構成から紹介します。</p></div>
-        <div class="cp-tech-list">
-          <article class="cp-tech-row"><div class="cp-tech-id">01</div><div class="cp-tech-title"><span class="cp-tech-kicker">PAINT COLLISION</span><h3>ペイント弾と<br>ブロックの状態管理</h3></div><div class="cp-tech-copy"><p>マウス操作でペイント弾を生成し、弾の座標から衝突対象のタイルを判定。着弾した塗装可能タイルの色情報を更新して、足場の挙動と表示色を切り替えます。</p><div class="cp-tech-tags"><span>Projectile</span><span>Tile state</span><span>ColorType</span></div></div></article>
-          <article class="cp-tech-row"><div class="cp-tech-id">02</div><div class="cp-tech-title"><span class="cp-tech-kicker">TILE MAP / COLLISION</span><h3>50×28タイルの<br>ステージ制御</h3></div><div class="cp-tech-copy"><p>32×32ピクセルのタイルを2次元配列で管理し、ブロック・はしご・敵・アイテムを配置。矩形同士の当たり判定と位置補正を使い、着地・壁衝突・移動を処理します。</p><div class="cp-tech-tags"><span>32px tiles</span><span>AABB collision</span><span>Level data</span></div></div></article>
-          <article class="cp-tech-row"><div class="cp-tech-id">03</div><div class="cp-tech-title"><span class="cp-tech-kicker">CHARACTER CONTROLLER</span><h3>移動・アニメーション・<br>はしご操作</h3></div><div class="cp-tech-copy"><p>経過時間を用いた位置と速度の更新に加え、ジャンプ、壁ジャンプ、はしご昇降を制御。移動方向や状態に応じてスプライトアニメーションを切り替えます。</p><div class="cp-tech-tags"><span>Delta time</span><span>Sprite animation</span><span>Ladder</span></div></div></article>
-          <article class="cp-tech-row"><div class="cp-tech-id">04</div><div class="cp-tech-title"><span class="cp-tech-kicker">ENEMIES / SCENE FLOW</span><h3>敵の弱点と<br>クリアまでの演出</h3></div><div class="cp-tech-copy"><p>敵の色別弱点とHP、スライムを一時的に固体化する処理を実装。ゴールのドアに到達するとフェード演出を挟み、タイトル／ゲーム／リザルトのシーンを遷移します。</p><div class="cp-tech-tags"><span>Enemy logic</span><span>Scene transition</span><span>Fade</span></div></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cp-section cp-controls" aria-labelledby="controls-title">
-      <div class="container cp-controls-grid">
-        <div><span class="cp-counter">03 / CONTROLS</span><h2 id="controls-title">操作方法</h2><p>シンプルな入力で、色によるアクションを試せるように設計しました。</p></div>
-        <div class="cp-keys">
-          <div><kbd>A</kbd><kbd>D</kbd><span>左右移動</span></div>
-          <div><kbd>W</kbd><kbd>S</kbd><span>はしごの昇り降り</span></div>
-          <div><kbd>SPACE</kbd><span>ジャンプ</span></div>
-          <div><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><span>赤 / 青 / 黄を選択</span></div>
-          <div><kbd>LEFT CLICK</kbd><span>ペイント弾を発射</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="screenshots" class="cp-section cp-gallery">
-      <div class="container">
-        <div class="cp-section-heading"><span class="cp-counter">04 / VISUALS</span><h2>SCREEN<em>SHOTS.</em></h2></div>
-        <div class="cp-image-grid">
-          <figure class="cp-screen cp-screen-main"><button type="button" data-image="assets/chroma-2.webp" data-alt="Chroma Painterのステージプレイ画面"><img src="assets/chroma-2.webp" alt="ゲームプレイ画面" loading="lazy"><span class="cp-zoom">拡大 ↗</span></button><figcaption>01 / GAMEPLAY</figcaption></figure>
-          <figure class="cp-screen"><button type="button" data-image="assets/chroma-1.webp" data-alt="Chroma Painterタイトル画面"><img src="assets/chroma-1.webp" alt="タイトル画面" loading="lazy"><span class="cp-zoom">拡大 ↗</span></button><figcaption>02 / TITLE SCREEN</figcaption></figure>
-          <figure class="cp-screen"><button type="button" data-image="assets/chroma-3.webp" data-alt="Chroma Painterクリア画面"><img src="assets/chroma-3.webp" alt="ゲームクリア画面" loading="lazy"><span class="cp-zoom">拡大 ↗</span></button><figcaption>03 / RESULT SCREEN</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <section id="video" class="cp-section cp-video-section">
-      <div class="container">
-        <div class="cp-video-head"><div><span class="cp-counter">05 / GAMEPLAY VIDEO</span><h2>SEE IT <em>IN ACTION.</em></h2></div><a class="cp-video-link" href="https://youtu.be/ief-NCYxMj0" target="_blank" rel="noopener noreferrer">YouTubeで見る ↗</a></div>
-        <div class="cp-video-frame portfolio-video" data-video-id="ief-NCYxMj0" aria-label="Chroma Painter プレイ動画">
-          <img class="portfolio-video-poster" src="assets/chroma-2.webp" alt="Chroma Painterのプレイ画面" loading="lazy">
-          <div class="portfolio-video-overlay">
-            <span class="portfolio-video-eyebrow">CHROMA PAINTER · GAMEPLAY DEMO</span>
-            <strong>プレイ動画を見る</strong>
-            <div class="portfolio-video-actions">
-              <a class="portfolio-video-cta" href="https://www.youtube.com/watch?v=ief-NCYxMj0" target="_blank" rel="noopener noreferrer">▶ YouTubeで見る ↗</a>
-              <button class="portfolio-video-embed-button" type="button" hidden>サイト内で再生 ▶</button>
-            </div>
-            <p class="portfolio-video-hint">動画はYouTubeで開きます。</p>
-          </div>
-        </div>
-        <div class="cp-delivery"><div><span class="cp-delivery-label">SUBMISSION MATERIALS</span><h3>ソースコード・実行ファイル</h3><p>Windows向けビルドとC++プロジェクト一式は、応募先の指定形式に合わせて別途提出します。こちらの公開サイトには実行ファイルやソースのダウンロードを含めていません。</p></div><a href="index.html#contact" class="btn btn-outline">CONTACT ↗</a></div>
-      </div>
-    </section>
-
-    <section class="cp-footer-cta"><div class="container"><span>THANK YOU FOR VIEWING</span><h2>BACK TO <em>PORTFOLIO.</em></h2><a href="index.html#work" class="btn btn-primary">すべての作品を見る <span aria-hidden="true">↗</span></a></div></section>
-  </main>
-  <footer class="cp-footer"><div class="container"><span>© <span id="year">2026</span> THUTA ZAW</span><a href="index.html">MAIN PORTFOLIO ↗</a></div></footer>
-  <dialog class="lightbox" id="lightbox" aria-label="画像を拡大表示">
-    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="閉じる">×</button>
-    <img id="lightbox-img" alt=""><p id="lightbox-caption"></p>
-  </dialog>
+<div aria-hidden="true" class="page-progress" id="page-progress"></div>
+<a class="skip-link" href="#main">本文へスキップ</a>
+<header class="site-header" id="top">
+<div class="header-inner container">
+<a aria-label="ポートフォリオのトップへ戻る" class="brand" href="index.html">
+<span class="brand-symbol">T<span class="brand-accent">/</span>Z</span>
+<span class="brand-label">THUTA ZAW <small>GAME PROGRAMMER</small></span>
+</a>
+<nav aria-label="ページ内メニュー" class="desktop-nav">
+<a href="index.html#work">ALL WORK</a>
+<a href="#overview">OVERVIEW</a>
+<a href="#technical">ENGINEERING</a>
+<a href="#screenshots">GALLERY</a>
+<a href="#video">VIDEO</a>
+</nav>
+<a class="header-contact" href="index.html#contact">CONTACT <span aria-hidden="true">↗</span></a>
+<div aria-label="Language / 言語" class="language-switcher" role="group"><a aria-current="page" class="language-choice active" href="chroma-painter.html" hreflang="ja" lang="ja">日本語</a><a class="language-choice" href="chroma-painter-en.html" hreflang="en" lang="en">EN</a></div><button aria-controls="mobile-nav" aria-expanded="false" aria-label="メニューを開く" class="menu-toggle" id="menu-toggle" type="button"><span></span><span></span></button>
+</div>
+<nav aria-label="モバイルメニュー" class="mobile-nav" hidden="" id="mobile-nav">
+<a href="index.html#work">ALL WORK</a><a href="#overview">OVERVIEW</a><a href="#technical">ENGINEERING</a><a href="#screenshots">GALLERY</a><a href="#video">VIDEO</a><a href="index.html#contact">CONTACT</a>
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="cp-title" class="cp-hero">
+<div aria-hidden="true" class="cp-colorrail"><span></span><span></span><span></span><span></span></div>
+<div class="container cp-hero-inner">
+<a class="cp-back" href="index.html#chroma">← ALL PROJECTS</a>
+<div class="cp-hero-top">
+<div class="cp-hero-copy">
+<p class="cp-kicker">02 / GAME PROJECT — C++ &amp; DIRECTX 11</p>
+<h1 id="cp-title">CHROMA<br/><em>PAINTER</em><span class="cp-title-dot">.</span></h1>
+<p class="cp-lead">色を塗る。<br/>世界のルールが変わる。</p>
+<p class="cp-lead-sub">色ごとの性質を使い分けてゴールを目指す、2Dプラットフォームアクション。ペイント弾の着弾によって足場の挙動が変わるゲームシステムを、C++で実装しました。</p>
+<div class="cp-hero-tags"><span>C++</span><span>DIRECTX 11</span><span>2D PLATFORMER</span><span>VISUAL STUDIO</span></div>
+<div class="cp-hero-actions">
+<a class="btn btn-primary" href="#video">WATCH GAMEPLAY <span aria-hidden="true">↗</span></a>
+<a class="btn btn-outline" href="#technical">ENGINEERING <span aria-hidden="true">↓</span></a>
+</div>
+</div>
+<div class="cp-hero-art">
+<img alt="Chroma Painterの色鮮やかなタイトル画面" fetchpriority="high" src="assets/chroma-1.webp"/>
+<span class="cp-image-label">TITLE SCREEN / 2025</span>
+</div>
+</div>
+<div class="cp-facts">
+<div><span>PROJECT</span><strong>Chroma Painter</strong></div>
+<div><span>ENGINE</span><strong>DirectX 11 / C++</strong></div>
+<div><span>GENRE</span><strong>2D Action / Puzzle</strong></div>
+<div><span>ROLE</span><strong>Game programming</strong></div>
+</div>
+</div>
+</section>
+<section class="cp-section cp-overview" id="overview">
+<div class="container">
+<div class="cp-section-heading"><span class="cp-counter">01 / OVERVIEW</span><h2>色を使って、<br/><em>道を切り開く。</em></h2></div>
+<div class="cp-overview-grid">
+<div class="cp-overview-shot">
+<img alt="レンガの足場、はしご、敵キャラクターが配置されたChroma Painterのゲーム画面" loading="lazy" src="assets/chroma-2.webp"/>
+<div class="cp-shot-caption"><span>ACTUAL GAMEPLAY</span><span>DIRECTX / 2D</span></div>
+</div>
+<div class="cp-overview-copy">
+<p>プレイヤーは赤・青・黄のペイントを切り替え、ステージ上の塗装可能なブロックに弾を当てながら進みます。色によって反発、滑走、壁面移動などの動きが変わるため、アクションとパズルの両方の判断が必要です。</p>
+<p>敵の弱点色、スライムの一時的な足場化、はしごによる上下移動などを組み合わせ、ステージ右端のドアを目指します。</p>
+<p class="cp-smallprint">本ページの実装説明は、提出用アーカイブ内のC++ソースとゲーム説明資料を確認して作成しています。</p>
+</div>
+</div>
+<div aria-label="3色のペイント効果" class="cp-colors">
+<article class="cp-color-card cp-red"><span class="cp-color-number">01 — RED</span><span aria-hidden="true" class="cp-color-icon">↥</span><h3>跳ねる</h3><p>赤く塗った足場に着地すると、上向きの速度を与える反発ギミック。</p></article>
+<article class="cp-color-card cp-blue"><span class="cp-color-number">02 — BLUE</span><span aria-hidden="true" class="cp-color-icon">⇢</span><h3>滑る</h3><p>青い足場では加速や減衰が変わり、通常とは違う滑りやすさを表現。</p></article>
+<article class="cp-color-card cp-yellow"><span class="cp-color-number">03 — YELLOW</span><span aria-hidden="true" class="cp-color-icon">⊕</span><h3>壁を使う</h3><p>壁面の落下速度を抑え、壁ジャンプのきっかけを作る。敵の弱点色にも利用。</p></article>
+</div>
+</div>
+</section>
+<section class="cp-section cp-technical" id="technical">
+<div class="container">
+<div class="cp-section-heading"><span class="cp-counter">02 / ENGINEERING</span><h2>実装した<br/><em>ゲームシステム。</em></h2><p class="cp-heading-desc">ゲームの手触りを支える部分を、ゲームロジックとC++の構成から紹介します。</p></div>
+<div class="cp-tech-list">
+<article class="cp-tech-row"><div class="cp-tech-id">01</div><div class="cp-tech-title"><span class="cp-tech-kicker">PAINT COLLISION</span><h3>ペイント弾と<br/>ブロックの状態管理</h3></div><div class="cp-tech-copy"><p>マウス操作でペイント弾を生成し、弾の座標から衝突対象のタイルを判定。着弾した塗装可能タイルの色情報を更新して、足場の挙動と表示色を切り替えます。</p><div class="cp-tech-tags"><span>Projectile</span><span>Tile state</span><span>ColorType</span></div></div></article>
+<article class="cp-tech-row"><div class="cp-tech-id">02</div><div class="cp-tech-title"><span class="cp-tech-kicker">TILE MAP / COLLISION</span><h3>50×28タイルの<br/>ステージ制御</h3></div><div class="cp-tech-copy"><p>32×32ピクセルのタイルを2次元配列で管理し、ブロック・はしご・敵・アイテムを配置。矩形同士の当たり判定と位置補正を使い、着地・壁衝突・移動を処理します。</p><div class="cp-tech-tags"><span>32px tiles</span><span>AABB collision</span><span>Level data</span></div></div></article>
+<article class="cp-tech-row"><div class="cp-tech-id">03</div><div class="cp-tech-title"><span class="cp-tech-kicker">CHARACTER CONTROLLER</span><h3>移動・アニメーション・<br/>はしご操作</h3></div><div class="cp-tech-copy"><p>経過時間を用いた位置と速度の更新に加え、ジャンプ、壁ジャンプ、はしご昇降を制御。移動方向や状態に応じてスプライトアニメーションを切り替えます。</p><div class="cp-tech-tags"><span>Delta time</span><span>Sprite animation</span><span>Ladder</span></div></div></article>
+<article class="cp-tech-row"><div class="cp-tech-id">04</div><div class="cp-tech-title"><span class="cp-tech-kicker">ENEMIES / SCENE FLOW</span><h3>敵の弱点と<br/>クリアまでの演出</h3></div><div class="cp-tech-copy"><p>敵の色別弱点とHP、スライムを一時的に固体化する処理を実装。ゴールのドアに到達するとフェード演出を挟み、タイトル／ゲーム／リザルトのシーンを遷移します。</p><div class="cp-tech-tags"><span>Enemy logic</span><span>Scene transition</span><span>Fade</span></div></div></article>
+</div>
+</div>
+</section>
+<section aria-labelledby="controls-title" class="cp-section cp-controls">
+<div class="container cp-controls-grid">
+<div><span class="cp-counter">03 / CONTROLS</span><h2 id="controls-title">操作方法</h2><p>シンプルな入力で、色によるアクションを試せるように設計しました。</p></div>
+<div class="cp-keys">
+<div><kbd>A</kbd><kbd>D</kbd><span>左右移動</span></div>
+<div><kbd>W</kbd><kbd>S</kbd><span>はしごの昇り降り</span></div>
+<div><kbd>SPACE</kbd><span>ジャンプ</span></div>
+<div><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><span>赤 / 青 / 黄を選択</span></div>
+<div><kbd>LEFT CLICK</kbd><span>ペイント弾を発射</span></div>
+</div>
+</div>
+</section>
+<section class="cp-section cp-gallery" id="screenshots">
+<div class="container">
+<div class="cp-section-heading"><span class="cp-counter">04 / VISUALS</span><h2>SCREEN<em>SHOTS.</em></h2></div>
+<div class="cp-image-grid">
+<figure class="cp-screen cp-screen-main"><button data-alt="Chroma Painterのステージプレイ画面" data-image="assets/chroma-2.webp" type="button"><img alt="ゲームプレイ画面" loading="lazy" src="assets/chroma-2.webp"/><span class="cp-zoom">拡大 ↗</span></button><figcaption>01 / GAMEPLAY</figcaption></figure>
+<figure class="cp-screen"><button data-alt="Chroma Painterタイトル画面" data-image="assets/chroma-1.webp" type="button"><img alt="タイトル画面" loading="lazy" src="assets/chroma-1.webp"/><span class="cp-zoom">拡大 ↗</span></button><figcaption>02 / TITLE SCREEN</figcaption></figure>
+<figure class="cp-screen"><button data-alt="Chroma Painterクリア画面" data-image="assets/chroma-3.webp" type="button"><img alt="ゲームクリア画面" loading="lazy" src="assets/chroma-3.webp"/><span class="cp-zoom">拡大 ↗</span></button><figcaption>03 / RESULT SCREEN</figcaption></figure>
+</div>
+</div>
+</section>
+<section class="cp-section cp-video-section" id="video">
+<div class="container">
+<div class="cp-video-head"><div><span class="cp-counter">05 / GAMEPLAY VIDEO</span><h2>SEE IT <em>IN ACTION.</em></h2></div><a class="cp-video-link" href="https://youtu.be/ief-NCYxMj0" rel="noopener noreferrer" target="_blank">YouTubeで見る ↗</a></div>
+<div aria-label="Chroma Painter プレイ動画" class="cp-video-frame portfolio-video" data-video-id="ief-NCYxMj0">
+<img alt="Chroma Painterのプレイ画面" class="portfolio-video-poster" loading="lazy" src="assets/chroma-2.webp"/>
+<div class="portfolio-video-overlay">
+<span class="portfolio-video-eyebrow">CHROMA PAINTER · GAMEPLAY DEMO</span>
+<strong>プレイ動画を見る</strong>
+<div class="portfolio-video-actions">
+<a class="portfolio-video-cta" href="https://www.youtube.com/watch?v=ief-NCYxMj0" rel="noopener noreferrer" target="_blank">▶ YouTubeで見る ↗</a>
+<button class="portfolio-video-embed-button" hidden="" type="button">サイト内で再生 ▶</button>
+</div>
+<p class="portfolio-video-hint">動画はYouTubeで開きます。</p>
+</div>
+</div>
+<div class="cp-delivery"><div><span class="cp-delivery-label">SUBMISSION MATERIALS</span><h3>ソースコード・実行ファイル</h3><p>Windows向けビルドとC++プロジェクト一式は、応募先の指定形式に合わせて別途提出します。こちらの公開サイトには実行ファイルやソースのダウンロードを含めていません。</p></div><a class="btn btn-outline" href="index.html#contact">CONTACT ↗</a></div>
+</div>
+</section>
+<section class="cp-footer-cta"><div class="container"><span>THANK YOU FOR VIEWING</span><h2>BACK TO <em>PORTFOLIO.</em></h2><a class="btn btn-primary" href="index.html#work">すべての作品を見る <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="cp-footer"><div class="container"><span>© <span id="year">2026</span> THUTA ZAW</span><a href="index.html">MAIN PORTFOLIO ↗</a></div></footer>
+<dialog aria-label="画像を拡大表示" class="lightbox" id="lightbox">
+<button aria-label="閉じる" class="lightbox-close" id="lightbox-close" type="button">×</button>
+<img alt="" id="lightbox-img"/><p id="lightbox-caption"></p>
+</dialog>
 </body>
 </html>

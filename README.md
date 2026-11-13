@@ -52,3 +52,17 @@ ZIPを解凍し、`index.html` をダブルクリックしてください。Proj
 - ページ最下部のお問い合わせ欄から「PDFをダウンロード」「デモリールを見る」の２つのボタンを削除しました。メールボタンはそのままです。
 - 履歴書のボタンはまだ追加していません。後日、履歴書PDFを受け取った段階で差し替えられます。
 - Home HearthのPDFは、その他の紹介場所では引き続き利用できます。
+
+
+## Japanese / English language option (2026-11 update)
+
+- `index.html`, `chroma-painter.html`, `space-shooter.html`: Japanese pages.
+- `index-en.html`, `chroma-painter-en.html`, `space-shooter-en.html`: English pages.
+- The language selector in the header links to the corresponding page in the other language.
+- `language.css` styles the selector and improves English typography. Upload this file to the repository root too.
+- `THUTA_ZAW_Rirekisho.pdf` is linked beside **Send email** on the homepage.
+
+**PRIVACY WARNING:** `THUTA_ZAW_Rirekisho.pdf` contains private personal information. Publishing the PDF on public GitHub Pages makes it publicly accessible to anyone. If you prefer not to publish personal information, delete the PDF from the uploaded website and replace the résumé button with an email request link.
+
+### Updating the live GitHub Pages site
+Upload every file and directory from this ZIP into the root of `THUTAZAW29.github.io` and choose to replace existing files. In particular, include all CSS, JavaScript, `assets/` files, English HTML pages, and the PDF if you knowingly want it public. After the commit, GitHub Pages redeploys; use Ctrl+Shift+R to bypass cache.
