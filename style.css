@@ -414,3 +414,10 @@ h1, h2, h3, p, figure { margin-top: 0; }
   .home-hearth-video {grid-template-columns:minmax(0,1fr);gap:22px;}
   .home-hearth-video-frame {min-width:0;width:100%;}
 }
+
+/* Teacher review revisions: award context and confirmed contribution details */
+.award-explanation { display:block; margin-top:.36rem; font-size:.78rem; line-height:1.65; color:var(--text-muted, #a5aab3); font-weight:400; }
+.contribution-note { margin:1.25rem 0 1rem; padding:1rem 1.15rem; background:rgba(255,255,255,.035); border-left:2px solid var(--accent, #eab565); border-radius:0 8px 8px 0; }
+.contribution-note h4 { font-size:.85rem; letter-spacing:.02em; margin:0 0 .5rem; color:var(--text, #f4f4f4); }
+.contribution-note p { margin:0; font-size:.9rem; line-height:1.78; }
+@media(max-width:650px) { .contribution-note { padding:.85rem; } .award-explanation { font-size:.75rem; } }
